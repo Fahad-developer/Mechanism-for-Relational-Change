@@ -1,0 +1,16 @@
+Primary Palette
+Primary Color — Deep Teal/Emerald Green
+
+#1B6B5C (or #0F7A6B)
+
+Symbolizes growth, hope, and stability — a widely trusted color in the NGO sector
+Secondary Color — Warm Coral/Terracotta
+
+#E8745B (or #F4845F)
+
+Represents energy, warmth, and compassion — perfect for calls-to-action (Donate button)
+Accent Color — Golden Yellow/Mustard
+
+#F4B942
+
+Conveys optimism and empowerment — ideal for highlights, icons, or badges

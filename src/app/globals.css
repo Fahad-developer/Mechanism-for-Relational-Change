@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: "Menlo", "Monaco", monospace;
+  --animate-glow-pulse: glow-pulse 2.5s ease-in-out infinite;
+  --animate-dropdown-enter: dropdown-enter 0.25s ease-out;
+  --animate-link-slide: link-slide 0.3s ease-out;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-reverse: float-reverse 9s ease-in-out infinite;
+  --animate-fade-in-left: fade-in-left 0.7s ease-out both;
+  --animate-fade-in-right: fade-in-right 0.7s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.7s ease-out both;
+
+  /* ── Brand Palette ── */
+  /* Primary: Deep Teal / Emerald Green (#1B6B5C) */
+  --color-primary-50: #eef7f5;
+  --color-primary-100: #d0ede7;
+  --color-primary-200: #a5dacf;
+  --color-primary-300: #6fc0b0;
+  --color-primary-400: #45a994;
+  --color-primary-500: #1b6b5c;
+  --color-primary-600: #155a4d;
+  --color-primary-700: #10483e;
+  --color-primary-800: #0b372f;
+  --color-primary-900: #06261f;
+
+  /* Secondary: Warm Coral / Terracotta (#E8745B) */
+  --color-secondary-50: #fdf2ef;
+  --color-secondary-100: #fadfd7;
+  --color-secondary-200: #f5bfb0;
+  --color-secondary-300: #ef9a83;
+  --color-secondary-400: #e8745b;
+  --color-secondary-500: #d65d43;
+  --color-secondary-600: #b84a33;
+  --color-secondary-700: #963926;
+  --color-secondary-800: #7a2d1c;
+  --color-secondary-900: #5e2113;
+
+  /* Accent: Golden Yellow / Mustard (#F4B942) */
+  --color-accent-50: #fef8ed;
+  --color-accent-100: #fceed1;
+  --color-accent-200: #f8dd9e;
+  --color-accent-300: #f4c96b;
+  --color-accent-400: #f4b942;
+  --color-accent-500: #e0a030;
+  --color-accent-600: #c48723;
+  --color-accent-700: #a36d19;
+  --color-accent-800: #825412;
+  --color-accent-900: #613d0c;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes dropdown-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes link-slide {
+  from {
+    opacity: 0;
+    transform: translateX(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ── Hero section animations ── */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Leaflet overrides ── */
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  padding: 4px 8px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(27, 107, 92, 0.15) !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none !important;
+  border: 1px solid rgba(27, 107, 92, 0.15) !important;
+}
+
+.leaflet-popup-close-button {
+  display: none !important;
+}
+
+.custom-marker,
+.custom-marker-active {
+  background: transparent !important;
+  border: none !important;
+}
+
+@keyframes marker-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.2;
+  }
+}
+
+/* Make map fill its container */
+.leaflet-container {
+  border-radius: 1rem !important;
+  font-family: inherit !important;
+}
