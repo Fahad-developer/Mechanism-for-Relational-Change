@@ -91,7 +91,7 @@ export default function FooterWrapper() {
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
-                Khuzdar, Balochistan, Pakistan
+                Saddullah Street Umer Farooq Chowk Khuzdar, Baluchistan, Pakistan.
               </li>
               <li className="flex items-start gap-2">
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">

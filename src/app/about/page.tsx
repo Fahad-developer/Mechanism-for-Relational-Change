@@ -360,7 +360,7 @@ export default function About() {
               Our <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">Journey</span>
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-zinc-500">
-              From a grassroots vision to a growing movement — here&apos;s how we&apos;ve evolved.
+              From a grassroots vision to a growing movement here&apos;s how we&apos;ve evolved.
             </p>
           </div>
 
