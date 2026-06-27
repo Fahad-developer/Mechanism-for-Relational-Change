@@ -9,12 +9,13 @@ const pillars = [
     description:
       "We believe education is the most powerful tool for transforming communities. Our flagship School of Scholars the first girls' school in Khuzdar introducing STEM and leadership education serves as a model institution demonstrating what quality, girl centred education looks like in rural Balochistan.",
     programs: [
-      "School of Scholars 231 girls enrolled, hundreds graduated",
+      "School of Scholars — 231 girls enrolled, hundreds graduated",
       "STEM education through Science Clubs and innovation challenges",
-      "Action for Education advocacy for girls' access to learning",
-      "Future CEOs entrepreneurship and enterprise skills for girls",
+      "STEM Pioneers Project — Kalat District (U.S. Consulate/PUAN)",
+      "Action for Education — advocacy for girls' access to learning",
+      "Future CEOs — entrepreneurship and enterprise skills for girls",
     ],
-    impact: "Hundreds of girls empowered with education, confidence, and leadership skills to pursue higher education and careers.",
+    impact: "Hundreds of girls empowered with education, STEM skills, confidence, and leadership to pursue higher education and careers.",
     image: "/girlsedu.jpg",
   },
   {

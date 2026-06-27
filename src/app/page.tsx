@@ -1,4 +1,5 @@
 import HeroImageSlider from "@/components/HeroImageSlider";
+import PartnersBanner from "@/components/PartnersBanner";
 
 const values = [
   "Equity",
@@ -37,7 +38,7 @@ export default function Home() {
               style={{ animationDelay: "200ms" }}
             >
               We empower women and girls in rural Balochistan through
-              education, creating lasting change for generations to come.
+              education, STEM learning, and leadership, creating lasting change for generations to come.
             </p>
 
             <div
@@ -282,6 +283,8 @@ export default function Home() {
         </div>
       </section>
 
+      <PartnersBanner />
+
       {/* ── Programs / What We Do ── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-white via-primary-50/30 to-accent-50/30 px-6 py-24 sm:py-32 lg:px-8">
         <div className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full bg-primary-100/20 blur-3xl animate-float" />
@@ -314,7 +317,7 @@ export default function Home() {
               {
                 num: "01",
                 title: "Girls' Education",
-                desc: "Promoting quality education through the School of Scholars a model girls' school in Khuzdar with 231 students enrolled.",
+                desc: "Promoting quality education through the School of Scholars, a model girls' school in Khuzdar with 231 students enrolled, plus STEM Pioneers in Kalat District.",
                 color: "primary",
                 href: "/what-we-do",
                 icon: (
@@ -435,7 +438,7 @@ export default function Home() {
               ?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-emerald-100/80">
-              Whether you want to volunteer your time, partner with us, or make a donation — every
+              Whether you want to volunteer your time, partner with us, or make a donation every
               action brings us closer to an empowered and inclusive Balochistan.
             </p>
           </div>
@@ -477,6 +480,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </>
   );
 }

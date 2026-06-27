@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import FooterWrapper from "@/components/FooterWrapper";
+import ChatBotWrapper from "@/components/ChatBotWrapper";
+import EventsFloatingWrapper from "@/components/EventsFloatingWrapper";
 import "./globals.css";
 
 const inter = Inter({
@@ -27,6 +29,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <FooterWrapper />
+        <ChatBotWrapper />
+        <EventsFloatingWrapper />
       </body>
     </html>
   );

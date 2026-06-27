@@ -19,6 +19,8 @@ const mainLinks: NavLink[] = [
 
 const moreLinks: NavLink[] = [
   { label: "Blog", href: "/blog" },
+  { label: "News", href: "/news" },
+  { label: "Events", href: "/events" },
   { label: "Volunteer", href: "/volunteer" },
   { label: "Gallery", href: "/gallery" },
   { label: "FAQ", href: "/faq" },

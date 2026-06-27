@@ -18,7 +18,7 @@ function getUser() {
   return null;
 }
 
-type Tab = "overview" | "blogs" | "accounts" | "payment-methods" | "leads" | "volunteers";
+type Tab = "overview" | "blogs" | "accounts" | "payment-methods" | "leads" | "volunteers" | "events" | "news";
 
 const sidebarTabs: { key: Tab; label: string; icon: string }[] = [
   { key: "overview", label: "Overview", icon: "M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Zm0 9.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6Zm0 9.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" },
@@ -28,6 +28,8 @@ const sidebarTabs: { key: Tab; label: string; icon: string }[] = [
   { key: "payment-methods", label: "Payment Methods", icon: "M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" },
   { key: "leads", label: "Contact Leads", icon: "M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" },
   { key: "volunteers", label: "Volunteers", icon: "M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" },
+  { key: "events", label: "Events", icon: "M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" },
+  { key: "news", label: "News", icon: "M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" },
 ];
 
 const PIE_COLORS = ["#059669", "#F59E0B", "#3B82F6", "#EF4444", "#8B5CF6", "#EC4899"];
@@ -81,6 +83,30 @@ interface Volunteer {
   createdAt: string;
 }
 
+interface EventItem {
+  _id: string;
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  description: string;
+  image: string;
+  isUpcoming: boolean;
+  createdAt: string;
+}
+
+interface NewsItem {
+  _id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  category: string;
+  image: string;
+  slug: string;
+  isPublished: boolean;
+  createdAt: string;
+}
+
 const typeLabels: Record<string, string> = {
   bank: "Bank Transfer", easypaisa: "Easypaisa", jazzcash: "JazzCash",
   paypal: "PayPal", stripe: "Stripe", other: "Other",
@@ -98,6 +124,8 @@ export default function Dashboard() {
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>([]);
   const [leads, setLeads] = useState<Lead[]>([]);
   const [volunteers, setVolunteers] = useState<Volunteer[]>([]);
+  const [events, setEvents] = useState<EventItem[]>([]);
+  const [news, setNews] = useState<NewsItem[]>([]);
 
   // Payment method form
   const [pmForm, setPmForm] = useState({ name: "", type: "bank", details: "", isActive: true, order: 0 });
@@ -113,6 +141,28 @@ export default function Dashboard() {
   const [formImage, setFormImage] = useState("");
   const [formSlug, setFormSlug] = useState("");
   const [blogError, setBlogError] = useState("");
+
+  // Event form
+  const [editEvent, setEditEvent] = useState<EventItem | null>(null);
+  const [eventTitle, setEventTitle] = useState("");
+  const [eventDate, setEventDate] = useState("");
+  const [eventTime, setEventTime] = useState("");
+  const [eventLocation, setEventLocation] = useState("");
+  const [eventDescription, setEventDescription] = useState("");
+  const [eventImage, setEventImage] = useState("");
+  const [eventIsUpcoming, setEventIsUpcoming] = useState(true);
+  const [eventError, setEventError] = useState("");
+
+  // News form
+  const [editNews, setEditNews] = useState<NewsItem | null>(null);
+  const [newsTitle, setNewsTitle] = useState("");
+  const [newsExcerpt, setNewsExcerpt] = useState("");
+  const [newsContent, setNewsContent] = useState("");
+  const [newsCategory, setNewsCategory] = useState("Announcement");
+  const [newsImage, setNewsImage] = useState("");
+  const [newsSlug, setNewsSlug] = useState("");
+  const [newsIsPublished, setNewsIsPublished] = useState(true);
+  const [newsFormError, setNewsFormError] = useState("");
 
   // Account form
   const [newUser, setNewUser] = useState("");
@@ -145,35 +195,41 @@ export default function Dashboard() {
       }, INACTIVITY_MS);
     }
 
-    const events = ["mousedown", "keydown", "touchstart", "scroll"];
-    events.forEach((e) => window.addEventListener(e, reset));
+    const domEvents = ["mousedown", "keydown", "touchstart", "scroll"];
+    domEvents.forEach((e) => window.addEventListener(e, reset));
     reset();
 
     return () => {
       clearTimeout(timer);
-      events.forEach((e) => window.removeEventListener(e, reset));
+      domEvents.forEach((e) => window.removeEventListener(e, reset));
     };
   }, [router]);
 
   async function fetchAll() {
     try {
-      const [bRes, aRes, pmRes, lRes, vRes] = await Promise.all([
+      const [bRes, aRes, pmRes, lRes, vRes, eRes, nRes] = await Promise.all([
         fetch("/api/blogs"),
         fetch("/api/users/list"),
         fetch("/api/payment-methods"),
         fetch("/api/leads"),
         fetch("/api/volunteers"),
+        fetch("/api/events"),
+        fetch("/api/news"),
       ]);
       const bData = await bRes.json();
       const aData = await aRes.json();
       const pmData = await pmRes.json();
       const lData = await lRes.json();
       const vData = await vRes.json();
+      const eData = await eRes.json();
+      const nData = await nRes.json();
       if (bData.blogs) setBlogs(bData.blogs);
       if (aData.users) setAccounts(aData.users);
       if (pmData.methods) setPaymentMethods(pmData.methods);
       if (lData.leads) setLeads(lData.leads);
       if (vData.volunteers) setVolunteers(vData.volunteers);
+      if (eData.events) setEvents(eData.events);
+      if (nData.news) setNews(nData.news);
     } catch {}
   }
 
@@ -274,6 +330,86 @@ export default function Dashboard() {
   // ── Lead Status ──
   async function updateLeadStatus(_id: string, status: string) {
     await fetch("/api/leads", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ _id, status }) });
+    fetchAll();
+  }
+
+  // ── Events CRUD ──
+  function openNewEvent() {
+    setEditEvent(null); setEventError("");
+    setEventTitle(""); setEventDate(""); setEventTime(""); setEventLocation("");
+    setEventDescription(""); setEventImage(""); setEventIsUpcoming(true);
+  }
+  function openEditEvent(e: EventItem) {
+    setEditEvent(e);
+    setEventTitle(e.title);
+    setEventDate(e.date ? new Date(e.date).toISOString().slice(0, 10) : "");
+    setEventTime(e.time);
+    setEventLocation(e.location);
+    setEventDescription(e.description);
+    setEventImage(e.image);
+    setEventIsUpcoming(e.isUpcoming);
+  }
+
+  async function saveEvent(formE: React.FormEvent) {
+    formE.preventDefault();
+    setLoading(true); setEventError("");
+    const payload = {
+      title: eventTitle, date: eventDate, time: eventTime,
+      location: eventLocation, description: eventDescription,
+      image: eventImage, isUpcoming: eventIsUpcoming,
+    };
+    try {
+      if (editEvent?._id) {
+        await fetch("/api/events", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ _id: editEvent._id, ...payload }) });
+      } else {
+        await fetch("/api/events", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+      }
+      setEditEvent(null); fetchAll();
+    } catch { setEventError("Server error"); }
+    setLoading(false);
+  }
+
+  async function deleteEvent(id: string) {
+    if (!confirm("Delete this event?")) return;
+    await fetch("/api/events", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ _id: id }) });
+    fetchAll();
+  }
+
+  // ── News CRUD ──
+  function openNewNews() {
+    setEditNews(null); setNewsFormError("");
+    setNewsTitle(""); setNewsExcerpt(""); setNewsContent(""); setNewsCategory("Announcement");
+    setNewsImage(""); setNewsSlug(""); setNewsIsPublished(true);
+  }
+  function openEditNews(n: NewsItem) {
+    setEditNews(n);
+    setNewsTitle(n.title); setNewsExcerpt(n.excerpt); setNewsContent(n.content);
+    setNewsCategory(n.category); setNewsImage(n.image); setNewsSlug(n.slug);
+    setNewsIsPublished(n.isPublished);
+  }
+
+  async function saveNews(formE: React.FormEvent) {
+    formE.preventDefault();
+    setLoading(true); setNewsFormError("");
+    const payload = {
+      title: newsTitle, excerpt: newsExcerpt, content: newsContent,
+      category: newsCategory, image: newsImage,
+      slug: newsSlug || makeSlug(newsTitle), isPublished: newsIsPublished,
+    };
+    try {
+      if (editNews?._id) {
+        await fetch("/api/news", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ _id: editNews._id, ...payload }) });
+      } else {
+        await fetch("/api/news", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+      }
+      setEditNews(null); fetchAll();
+    } catch { setNewsFormError("Server error"); }
+    setLoading(false);
+  }
+
+  async function deleteNews(id: string) {
+    if (!confirm("Delete this news item?")) return;
+    await fetch("/api/news", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ _id: id }) });
     fetchAll();
   }
 
@@ -693,6 +829,153 @@ export default function Dashboard() {
                 </div>
               ))}
               {filteredVolunteers.length === 0 && <p className="py-8 text-center text-sm text-zinc-500">No volunteers found.</p>}
+            </div>
+          </div>
+        )}
+
+        {/* ── EVENTS ── */}
+        {tab === "events" && (
+          <div>
+            <div className="mb-6 flex items-center justify-between">
+              <p className="text-sm text-zinc-500">{events.length} events · {events.filter((e) => e.isUpcoming).length} upcoming</p>
+              <button
+                onClick={openNewEvent}
+                className="rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 px-5 py-2 text-xs font-semibold text-white transition-all hover:from-emerald-500 hover:to-teal-500"
+              >+ New Event</button>
+            </div>
+
+            {/* Event Form */}
+            {(editEvent !== undefined) && (eventTitle || editEvent === null) && (
+              <form onSubmit={saveEvent} className="mb-8 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
+                <h3 className="mb-4 text-sm font-semibold text-zinc-200">{editEvent ? "Edit Event" : "New Event"}</h3>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <input placeholder="Title" value={eventTitle} onChange={(e) => setEventTitle(e.target.value)} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <input type="date" value={eventDate} onChange={(e) => setEventDate(e.target.value)} className="rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 focus:border-emerald-500/50 focus:outline-none" required />
+                  <input type="time" value={eventTime} onChange={(e) => setEventTime(e.target.value)} className="rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 focus:border-emerald-500/50 focus:outline-none" required />
+                  <input placeholder="Location" value={eventLocation} onChange={(e) => setEventLocation(e.target.value)} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <div className="col-span-2">
+                    <label className="mb-1.5 block text-xs font-medium text-zinc-400">Cover Image</label>
+                    <div className="flex items-center gap-3">
+                      <input type="file" accept="image/*" onChange={async (e) => {
+                        const file = e.target.files?.[0];
+                        if (!file) return;
+                        const fd = new FormData();
+                        fd.append("file", file);
+                        const res = await fetch("/api/upload", { method: "POST", body: fd });
+                        const data = await res.json();
+                        if (data.path) setEventImage(data.path);
+                      }} className="w-full rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-300 file:mr-3 file:rounded-lg file:border-0 file:bg-zinc-700 file:px-3 file:py-1 file:text-xs file:text-zinc-200" />
+                      {eventImage && <span className="shrink-0 truncate text-xs text-emerald-400">Uploaded</span>}
+                    </div>
+                  </div>
+                  <textarea placeholder="Description" value={eventDescription} onChange={(e) => setEventDescription(e.target.value)} rows={3} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <label className="flex items-center gap-2 text-sm text-zinc-400">
+                    <input type="checkbox" checked={eventIsUpcoming} onChange={(e) => setEventIsUpcoming(e.target.checked)} className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-emerald-500/30" />
+                    Is Upcoming
+                  </label>
+                </div>
+                <div className="mt-4 flex gap-3">
+                  <button type="submit" disabled={loading} className="rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 px-6 py-2 text-xs font-semibold text-white disabled:opacity-60">{loading ? "Saving..." : "Save"}</button>
+                  <button type="button" onClick={() => setEditEvent(null)} className="rounded-full border border-zinc-700 px-6 py-2 text-xs font-semibold text-zinc-400">Cancel</button>
+                </div>
+                {eventError && <p className="mt-2 text-xs text-red-400">{eventError}</p>}
+              </form>
+            )}
+
+            {/* Events List */}
+            <div className="space-y-3">
+              {events.map((ev) => (
+                <div key={ev._id} className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900/40 px-5 py-4 transition-all hover:bg-zinc-800/30">
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold text-zinc-200">{ev.title}</p>
+                    <div className="mt-1 flex items-center gap-3 text-xs text-zinc-500">
+                      <span>{ev.date ? new Date(ev.date).toLocaleDateString() : "—"}</span>
+                      <span>{ev.time}</span>
+                      <span className="truncate text-zinc-600">{ev.location}</span>
+                      <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${ev.isUpcoming ? "bg-emerald-500/10 text-emerald-400" : "bg-zinc-800 text-zinc-500"}`}>{ev.isUpcoming ? "Upcoming" : "Past"}</span>
+                    </div>
+                  </div>
+                  <div className="flex shrink-0 gap-2 pl-4">
+                    <button onClick={() => openEditEvent(ev)} className="rounded-full border border-zinc-700 px-3 py-1 text-xs font-medium text-zinc-400 transition-all hover:border-emerald-500/30 hover:text-emerald-400">Edit</button>
+                    <button onClick={() => deleteEvent(ev._id)} className="rounded-full border border-red-500/20 px-3 py-1 text-xs font-medium text-red-400 transition-all hover:bg-red-500/10">Delete</button>
+                  </div>
+                </div>
+              ))}
+              {events.length === 0 && <p className="py-8 text-center text-sm text-zinc-500">No events yet. Create your first event above.</p>}
+            </div>
+          </div>
+        )}
+
+        {/* ── NEWS ── */}
+        {tab === "news" && (
+          <div>
+            <div className="mb-6 flex items-center justify-between">
+              <p className="text-sm text-zinc-500">{news.length} articles · {news.filter((n) => n.isPublished).length} published</p>
+              <button
+                onClick={openNewNews}
+                className="rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 px-5 py-2 text-xs font-semibold text-white transition-all hover:from-emerald-500 hover:to-teal-500"
+              >+ New Article</button>
+            </div>
+
+            {/* News Form */}
+            {(editNews !== undefined) && (newsTitle || editNews === null) && (
+              <form onSubmit={saveNews} className="mb-8 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
+                <h3 className="mb-4 text-sm font-semibold text-zinc-200">{editNews ? "Edit Article" : "New Article"}</h3>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <input placeholder="Title" value={newsTitle} onChange={(e) => { setNewsTitle(e.target.value); if (!editNews) setNewsSlug(makeSlug(e.target.value)); }} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <div className="col-span-2">
+                    <label className="mb-1.5 block text-xs font-medium text-zinc-400">Featured Image</label>
+                    <div className="flex items-center gap-3">
+                      <input type="file" accept="image/*" onChange={async (e) => {
+                        const file = e.target.files?.[0];
+                        if (!file) return;
+                        const fd = new FormData();
+                        fd.append("file", file);
+                        const res = await fetch("/api/upload", { method: "POST", body: fd });
+                        const data = await res.json();
+                        if (data.path) setNewsImage(data.path);
+                      }} className="w-full rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-300 file:mr-3 file:rounded-lg file:border-0 file:bg-zinc-700 file:px-3 file:py-1 file:text-xs file:text-zinc-200" />
+                      {newsImage && <span className="shrink-0 truncate text-xs text-emerald-400">Uploaded</span>}
+                    </div>
+                  </div>
+                  <input placeholder="Slug (auto-generated)" value={newsSlug} onChange={(e) => setNewsSlug(e.target.value)} className="rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <select value={newsCategory} onChange={(e) => setNewsCategory(e.target.value)} className="rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 focus:border-emerald-500/50 focus:outline-none">
+                    {["Announcement", "Press Release", "Update", "Story", "Event"].map((c) => <option key={c}>{c}</option>)}
+                  </select>
+                  <textarea placeholder="Excerpt" value={newsExcerpt} onChange={(e) => setNewsExcerpt(e.target.value)} rows={2} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <textarea placeholder="Full content" value={newsContent} onChange={(e) => setNewsContent(e.target.value)} rows={5} className="col-span-2 rounded-xl border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/50 focus:outline-none" required />
+                  <label className="flex items-center gap-2 text-sm text-zinc-400">
+                    <input type="checkbox" checked={newsIsPublished} onChange={(e) => setNewsIsPublished(e.target.checked)} className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-emerald-500/30" />
+                    Published
+                  </label>
+                </div>
+                <div className="mt-4 flex gap-3">
+                  <button type="submit" disabled={loading} className="rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 px-6 py-2 text-xs font-semibold text-white disabled:opacity-60">{loading ? "Saving..." : "Save"}</button>
+                  <button type="button" onClick={() => setEditNews(null)} className="rounded-full border border-zinc-700 px-6 py-2 text-xs font-semibold text-zinc-400">Cancel</button>
+                </div>
+                {newsFormError && <p className="mt-2 text-xs text-red-400">{newsFormError}</p>}
+              </form>
+            )}
+
+            {/* News List */}
+            <div className="space-y-3">
+              {news.map((n) => (
+                <div key={n._id} className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900/40 px-5 py-4 transition-all hover:bg-zinc-800/30">
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold text-zinc-200">{n.title}</p>
+                    <div className="mt-1 flex items-center gap-3 text-xs text-zinc-500">
+                      <span className="rounded-full bg-zinc-800 px-2 py-0.5 text-zinc-400">{n.category}</span>
+                      <span>{new Date(n.createdAt).toLocaleDateString()}</span>
+                      <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${n.isPublished ? "bg-emerald-500/10 text-emerald-400" : "bg-zinc-800 text-zinc-500"}`}>{n.isPublished ? "Published" : "Draft"}</span>
+                    </div>
+                  </div>
+                  <div className="flex shrink-0 gap-2 pl-4">
+                    <button onClick={() => openEditNews(n)} className="rounded-full border border-zinc-700 px-3 py-1 text-xs font-medium text-zinc-400 transition-all hover:border-emerald-500/30 hover:text-emerald-400">Edit</button>
+                    <button onClick={() => deleteNews(n._id)} className="rounded-full border border-red-500/20 px-3 py-1 text-xs font-medium text-red-400 transition-all hover:bg-red-500/10">Delete</button>
+                  </div>
+                </div>
+              ))}
+              {news.length === 0 && <p className="py-8 text-center text-sm text-zinc-500">No news articles yet. Create your first article above.</p>}
             </div>
           </div>
         )}

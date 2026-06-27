@@ -33,6 +33,29 @@ const categories = [
     ),
     color: "secondary",
   },
+  {
+    title: "STEM Pioneers Project",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.299M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19 14.3M14.25 3.104c.251.023.501.05.75.082M19 14.3a2.259 2.259 0 0 1-1.323 2.077m-11.354 0a2.259 2.259 0 0 1-1.323-2.077m11.354 0H5.323m2.104 6.25h9.146a.75.75 0 0 0 .75-.75V15.5a.75.75 0 0 0-.75-.75h-9.146a.75.75 0 0 0-.75.75v4.25a.75.75 0 0 0 .75.75Z" />
+    ),
+    tagline: "Inspiring Girls in STEM — Kalat District",
+    description:
+      "Supported by the U.S. Consulate and the Pakistan-U.S. Alumni Network (PUAN), the STEM Pioneers Project was a six-month initiative implemented by MRC in Kalat District. The project promoted practical, inclusive, and future-focused STEM education in five girls' high schools by strengthening teachers' skills, introducing digital learning opportunities, and creating STEM learning spaces for students.",
+    duration: "2023 — Kalat District",
+    stats: [
+      { label: "Schools", value: "5" },
+      { label: "Students", value: "80" },
+      { label: "Teachers", value: "20" },
+    ],
+    highlights: [
+      "Trained STEM Ambassadors in STEM concepts, leadership, event planning, and IT skills",
+      "Established STEM and computer labs in five girls' high schools",
+      "Conducted STEM awareness sessions, intensive trainings, and IT courses",
+      "Exposure visit to Magnifi Science Center for hands-on learning",
+      "Created a sustainable STEM Education Network for ongoing collaboration",
+    ],
+    color: "accent",
+  },
 ];
 
 const featuredProjects = [

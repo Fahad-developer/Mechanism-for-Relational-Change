@@ -11,6 +11,22 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    title: "STEM Pioneers Project: Bringing Hands-On Science to Girls in Kalat",
+    excerpt:
+      "Supported by the U.S. Consulate and PUAN, MRC's STEM Pioneers Project engaged 5 girls' high schools, 80 students, and 20 teachers in Kalat District — establishing STEM labs and creating a sustainable education network.",
+    content: [
+      "Supported by the U.S. Consulate and the Pakistan-U.S. Alumni Network (PUAN), the STEM Pioneers Project was a six-month initiative implemented by Mechanism for Rational Change (MRC) in Kalat District. The project promoted practical, inclusive, and future-focused STEM education in five girls' high schools by strengthening teachers' skills, introducing digital learning opportunities, and creating STEM learning spaces for students.",
+      "The project engaged 5 girls' high schools, 80 students, and 20 teachers. Trained STEM Ambassadors in STEM concepts, leadership, event planning, and IT skills. Conducted STEM awareness sessions, intensive trainings, IT courses, and an exposure visit to Magnifi Science Center.",
+      "Established STEM and computer labs, giving many girls access to hands-on learning tools and computers for the first time. Improved teachers' use of interactive and inquiry-based teaching methods. Increased students' confidence, curiosity, peer learning, and interest in STEM-related careers.",
+      "Created a STEM Education Network to continue collaboration and STEM activities beyond the project period. The project proved that rural girls have immense potential in science and technology when given the right opportunities and resources.",
+    ],
+    category: "Education",
+    date: "2023",
+    readTime: "4 min read",
+    image: "/tenis.jpeg",
+    slug: "stem-pioneers-kalat",
+  },
+  {
     title: "Her Power: Young Women of Balochistan Launch 14 Start-ups",
     excerpt:
       "With support from Women Fund Asia, MRC's Her Power project empowered 20 young women to turn their ideas into real businesses — from food brands to tech platforms.",
