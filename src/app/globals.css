@@ -185,3 +185,29 @@
   border-radius: 1rem !important;
   font-family: inherit !important;
 }
+
+/* ── Mobile-friendly overrides (does not affect desktop) ── */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 1.75rem !important;
+  }
+  .text-5xl {
+    font-size: 2rem !important;
+  }
+  .text-6xl {
+    font-size: 2.25rem !important;
+  }
+}

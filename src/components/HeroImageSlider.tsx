@@ -24,9 +24,9 @@ export default function HeroImageSlider() {
   }, [next]);
 
   return (
-    <div className="hidden lg:flex lg:flex-col animate-fade-in-right" style={{ animationDelay: "300ms" }}>
-      <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 shadow-2xl">
-        <div className="relative min-h-0 flex-1">
+    <div className="lg:flex lg:flex-col animate-fade-in-right w-full lg:w-auto mt-8 lg:mt-0" style={{ animationDelay: "300ms" }}>
+      <div className="relative flex flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 shadow-2xl h-64 sm:h-80 lg:min-h-0 lg:flex-1">
+        <div className="relative flex-1 lg:min-h-0">
           {images.map((src, i) => (
             <img
               key={src}

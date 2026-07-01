@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* ── Hero Section ── */}
-      <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20 px-6 lg:px-8">
+      <section className="relative min-h-0 sm:min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20 px-6 lg:px-8">
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-primary-200/40 blur-3xl animate-float" />
         <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-accent-200/30 blur-3xl animate-float-reverse" />

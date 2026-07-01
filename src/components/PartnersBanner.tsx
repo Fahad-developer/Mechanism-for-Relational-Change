@@ -34,12 +34,12 @@ export default function PartnersBanner() {
         </div>
 
         {/* Scrolling banner */}
-        <div className="mt-12 overflow-hidden rounded-2xl border border-zinc-200/60 bg-white/50 px-8 py-8 backdrop-blur-sm">
-          <div className="flex animate-marquee items-center gap-16">
+        <div className="mt-10 sm:mt-12 overflow-hidden rounded-2xl border border-zinc-200/60 bg-white/50 px-4 sm:px-8 py-5 sm:py-8 backdrop-blur-sm">
+          <div className="flex animate-marquee items-center gap-8 sm:gap-16">
             {[...partners, ...partners].map((partner, i) => (
               <div
                 key={`${partner.name}-${i}`}
-                className="flex h-20 w-40 shrink-0 items-center justify-center grayscale transition-all duration-500 hover:grayscale-0 hover:scale-110"
+                className="flex h-14 sm:h-20 w-28 sm:w-40 shrink-0 items-center justify-center grayscale transition-all duration-500 hover:grayscale-0 hover:scale-110"
               >
                 <Image
                   src={partner.src}

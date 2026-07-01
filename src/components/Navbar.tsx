@@ -46,20 +46,20 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-md bg-white/80 border-b border-zinc-200/60">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-8 py-3 sm:py-3.5">
         {/* Logo */}
         <a
           href="/"
-          className="flex items-center gap-2.5 group relative z-10"
+          className="flex items-center gap-2 sm:gap-2.5 group relative z-10"
         >
           <Image
             src="/mrclogo.png"
             alt="MRC"
             width={36}
             height={36}
-            className="rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
           />
-          <span className="text-lg font-semibold tracking-tight text-zinc-900 transition-colors duration-300 group-hover:text-primary-600">
+          <span className="text-base sm:text-lg font-semibold tracking-tight text-zinc-900 transition-colors duration-300 group-hover:text-primary-600">
             MRC
           </span>
         </a>
@@ -121,7 +121,7 @@ export default function Navbar() {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <a
             href="/donate"
             className="relative hidden sm:inline-flex items-center gap-1.5 rounded-full bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-primary-500/25 transition-all duration-300 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-500/30 hover:scale-[1.03] active:scale-[0.97] animate-glow-pulse"
@@ -133,19 +133,30 @@ export default function Navbar() {
             Donate
           </a>
 
+          {/* Mobile Donate (visible only below sm) */}
+          <a
+            href="/donate"
+            className="sm:hidden rounded-full bg-primary-600 p-2 text-white shadow-sm shadow-primary-500/25 transition-all active:scale-[0.97]"
+            aria-label="Donate"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+            </svg>
+          </a>
+
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative z-10 flex sm:hidden flex-col gap-1.5 p-2"
+            className="relative z-10 flex sm:hidden flex-col gap-1.5 p-2 -mr-1"
             aria-label="Toggle menu"
           >
             <span
-              className={`block h-0.5 w-6 rounded-full bg-zinc-700 transition-all duration-300 ${
+              className={`block h-0.5 w-5 rounded-full bg-zinc-700 transition-all duration-300 ${
                 mobileOpen ? "rotate-45 translate-y-[3.5px]" : ""
               }`}
             />
             <span
-              className={`block h-0.5 w-6 rounded-full bg-zinc-700 transition-all duration-300 ${
+              className={`block h-0.5 w-5 rounded-full bg-zinc-700 transition-all duration-300 ${
                 mobileOpen ? "-rotate-45 -translate-y-[3.5px]" : ""
               }`}
             />
@@ -159,12 +170,12 @@ export default function Navbar() {
           mobileOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="border-t border-zinc-200/60 bg-white/95 backdrop-blur-xl px-6 py-4 space-y-1">
+        <div className="border-t border-zinc-200/60 bg-white/95 backdrop-blur-xl px-4 sm:px-6 py-4 space-y-1">
           {mainLinks.map((link, i) => (
             <a
               key={link.label}
               href={link.href}
-              className={`mobile-link block rounded-lg px-3 py-3 text-sm font-medium text-zinc-600 transition-all duration-300 hover:bg-primary-50 hover:text-primary-700 hover:translate-x-1`}
+              className={`mobile-link block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-600 transition-all duration-300 hover:bg-primary-50 hover:text-primary-700 hover:translate-x-1`}
               style={{ transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms" }}
               onClick={() => setMobileOpen(false)}
             >

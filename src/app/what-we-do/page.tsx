@@ -228,7 +228,7 @@ export default function WhatWeDo() {
                         alt={pillar.title}
                         width={600}
                         height={400}
-                        className="h-full w-full object-cover transition-all duration-700 group-hover:scale-[1.03]"
+                        className="h-48 sm:h-64 md:h-full w-full object-cover transition-all duration-700 group-hover:scale-[1.03]"
                         style={{ maxHeight: "400px" }}
                       />
                       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />

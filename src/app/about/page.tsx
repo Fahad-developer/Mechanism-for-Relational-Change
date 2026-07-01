@@ -364,31 +364,31 @@ export default function About() {
             </p>
           </div>
 
-          <div className="relative mt-16">
+          <div className="relative mt-12 sm:mt-16">
             {/* Timeline track */}
-            <div className="absolute left-8 top-0 h-full w-0.5 bg-gradient-to-b from-primary-300 via-accent-200 to-primary-300 hidden md:block" />
+            <div className="absolute left-4 sm:left-8 top-0 h-full w-0.5 bg-gradient-to-b from-primary-300 via-accent-200 to-primary-300 hidden md:block" />
 
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-12">
               {timeline.map((item, i) => (
                 <div
                   key={item.year}
-                  className="animate-fade-in-up relative flex flex-col gap-4 md:flex-row md:items-start md:gap-8"
+                  className="animate-fade-in-up relative flex flex-col gap-3 sm:gap-4 md:flex-row md:items-start md:gap-8"
                   style={{ animationDelay: `${i * 150}ms` }}
                 >
                   {/* Dot + Year */}
-                  <div className="relative z-10 flex items-center gap-4 md:w-48 md:flex-col md:items-center md:gap-2 shrink-0">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-primary-200 bg-white shadow-md">
-                      <div className="h-3.5 w-3.5 rounded-full bg-primary-500 shadow-sm shadow-primary-300" />
+                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 md:w-48 md:flex-col md:items-center md:gap-2 shrink-0">
+                    <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-full border-2 border-primary-200 bg-white shadow-md">
+                      <div className="h-3 w-3 sm:h-3.5 sm:w-3.5 rounded-full bg-primary-500 shadow-sm shadow-primary-300" />
                     </div>
                     <span className="text-sm font-bold text-primary-700">{item.year}</span>
                   </div>
 
                   {/* Content */}
-                  <div className="group relative ml-16 flex-1 overflow-hidden rounded-2xl border border-zinc-100 bg-white/80 p-6 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-200/20 sm:p-8 md:ml-0">
+                  <div className="group relative ml-14 sm:ml-16 flex-1 overflow-hidden rounded-2xl border border-zinc-100 bg-white/80 p-5 sm:p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-200/20 md:ml-0">
                     <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary-100/50 blur-xl opacity-0 transition-all duration-500 group-hover:opacity-100" />
                     <div className="relative">
                       <span className="text-xs font-semibold uppercase tracking-widest text-primary-500">{item.year}</span>
-                      <h3 className="mt-1 text-lg font-bold text-zinc-800">{item.title}</h3>
+                      <h3 className="mt-1 text-base sm:text-lg font-bold text-zinc-800">{item.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-zinc-500 transition-colors duration-300 group-hover:text-zinc-700">
                         {item.description}
                       </p>

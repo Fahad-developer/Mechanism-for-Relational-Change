@@ -24,7 +24,7 @@ export default function FooterWrapper() {
   return (
     <footer className="bg-zinc-950 text-zinc-400">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
               <Image
@@ -108,7 +108,7 @@ export default function FooterWrapper() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-zinc-800 pt-8 text-center text-xs text-zinc-600">
+        <div className="mt-10 sm:mt-12 border-t border-zinc-800 pt-6 sm:pt-8 text-center text-xs text-zinc-600">
           &copy; {new Date().getFullYear()} MRC — Mechanism for Relational Change. All
           rights reserved.
         </div>
