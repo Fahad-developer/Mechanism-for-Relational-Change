@@ -44,14 +44,76 @@ export default async function NewsPage() {
 
         <div className="relative mx-auto max-w-5xl">
           {news.length === 0 ? (
-            <div className="animate-fade-in-up text-center py-20">
-              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary-100 text-primary-500">
-                <svg className="h-12 w-12" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
-                </svg>
-              </div>
-              <h3 className="mt-6 text-lg font-semibold text-zinc-700">No news yet</h3>
-              <p className="mt-2 text-sm text-zinc-500">Check back soon for the latest updates.</p>
+            <div className="grid gap-10">
+              {/* Static featured news items */}
+              {[
+                {
+                  title: "MRC Joins Start Network for Climate Resilience",
+                  category: "Partnership",
+                  date: "August 2026",
+                  excerpt: "MRC has been accepted as a member of the Start Network, enabling faster emergency response funding for climate-affected communities in Balochistan.",
+                  content: "This membership allows MRC to access rapid-response funding mechanisms, strengthening our capacity to deliver timely humanitarian assistance during floods, droughts, and other climate emergencies across the province.",
+                },
+                {
+                  title: "Malala Fund Partnership Announced",
+                  category: "Education",
+                  date: "July 2026",
+                  excerpt: "MRC has partnered with the Malala Fund to expand girls' education access in underserved districts of Balochistan.",
+                  content: "The partnership will support curriculum development, teacher training, and community engagement initiatives aimed at increasing enrollment and retention of girls in government schools.",
+                },
+                {
+                  title: "15 Students Awarded DIL Scholarships",
+                  category: "Education",
+                  date: "June 2026",
+                  excerpt: "Fifteen students from MRC's programs have been awarded scholarships through the Developments in Literacy (DIL) program for higher education.",
+                  content: "These scholarships cover tuition, books, and living expenses, enabling talented young women from Khuzdar and surrounding areas to pursue university education for the first time in their families.",
+                },
+                {
+                  title: "Education Champions Program Expands to Kalat",
+                  category: "Programs",
+                  date: "May 2026",
+                  excerpt: "The Education Champions initiative, training local advocates for girls' education, has expanded from Khuzdar to Kalat District.",
+                  content: "Twenty new Education Champions have been recruited and trained in community mobilization, advocacy, and basic education facilitation, bringing the total network to 41 active champions across two districts.",
+                },
+                {
+                  title: "Youth Advisory Group Established",
+                  category: "Governance",
+                  date: "April 2026",
+                  excerpt: "MRC has established a Youth Advisory Group to ensure young people's voices shape organizational decisions and program design.",
+                  content: "The group comprises 12 young leaders from across MRC's programs who will provide input on strategy, review new initiatives, and represent MRC at regional forums.",
+                },
+                {
+                  title: "MRC Water Advocacy Project Launched",
+                  category: "Climate",
+                  date: "March 2026",
+                  excerpt: "A new water advocacy project has been launched to address clean water access in drought-affected communities of Khuzdar District.",
+                  content: "The project combines infrastructure repair of existing water sources with community-based water management committees, ensuring sustainable access to safe drinking water for over 5,000 households.",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="animate-fade-in-up group relative overflow-hidden rounded-3xl border border-zinc-100 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl"
+                  style={{ animationDelay: `${i * 150}ms` }}
+                >
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-center gap-3">
+                      <span className="rounded-full bg-primary-100 px-3 py-0.5 text-xs font-semibold text-primary-700">
+                        {item.category}
+                      </span>
+                      <span className="text-xs text-zinc-400">{item.date}</span>
+                    </div>
+                    <h2 className="mt-3 text-lg font-bold text-zinc-800 transition-colors duration-300 group-hover:text-primary-700 sm:text-xl">
+                      {item.title}
+                    </h2>
+                    <p className="mt-2 text-sm leading-relaxed text-zinc-500 transition-colors duration-300 group-hover:text-zinc-700">
+                      {item.excerpt}
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                      {item.content}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           ) : (
             <div className="grid gap-10">
@@ -137,7 +199,7 @@ export default async function NewsPage() {
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
-                Donate Now
+                Support Our Work
               </span>
             </a>
             <a

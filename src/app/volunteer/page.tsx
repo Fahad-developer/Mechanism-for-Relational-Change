@@ -279,7 +279,7 @@ export default function Volunteer() {
               href="/donate"
               className="rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-[0.97]"
             >
-              Donate Now
+              Support Our Work
             </Link>
             <Link
               href="/contact"

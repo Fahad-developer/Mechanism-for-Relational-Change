@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { posts } from "@/data/posts";
 
 interface QA {
   question: string;
@@ -12,56 +11,62 @@ const qaPairs: QA[] = [
   {
     question: "What does MRC do?",
     answer:
-      "MRC (Mechanism for Relational Change) empowers women and girls in rural Balochistan through education, leadership, advocacy, skills, technology and community-led development. We pilot programs at the community level first, practicing ideas before scaling them.",
-  },
-  {
-    question: "How many girls are enrolled in school?",
-    answer: `Currently, ${231}+ girls are enrolled at the School of Scholars, MRC's model girls' high school in Khuzdar. Founded in 2015, the school provides quality education with innovative initiatives including STEM learning through Science Clubs, leadership development, and entrepreneurship workshops.`,
+      "Mechanism for Rational Change (MRC) is a women-led nonprofit founded in 2014, headquartered in Khuzdar, Balochistan. We empower girls, women, children and young people through education, leadership, advocacy, skills, technology and community-led development. Our model is to pilot ideas in real community settings, learn from implementation, and then scale through schools, networks and policy engagement.",
   },
   {
     question: "What is the School of Scholars?",
     answer:
-      "The School of Scholars is a girls' high school in Khuzdar, Balochistan, founded by MRC in 2015. Known as a 'Place of Daughters,' it provides a safe, inspiring environment with STEM learning through Science Clubs, entrepreneurship workshops, project-based learning, and student-led clubs. It received the Women Can Do Award from the U.S. Consulate Karachi for its outstanding contribution to girls' education.",
+      "Founded in 2015, the School of Scholars is MRC's model learning space for girls in Khuzdar. It integrates STEM, leadership, entrepreneurship, project-based learning, climate action, creative skills, heritage and sports. The school enables MRC to test approaches in a real education environment before adapting them for broader public-school and community use.",
   },
   {
     question: "What is the Her Power project?",
     answer:
-      "Her Power is one of MRC's flagship initiatives supported by Women Fund Asia. Out of 71 applicants, 20 young women were selected and trained in leadership, entrepreneurship, and business development. They launched 14+ start-ups including food brands, tech platforms, and local businesses — proving that girls in Balochistan can lead, innovate, and contribute to the economy.",
+      "Her Power, supported by Women Fund Asia, selected 20 young women from drought-affected communities out of 71 applicants. They received training in leadership, climate impacts, disaster risk reduction, confidence, communication, entrepreneurship and alternative livelihoods. Participants converted ideas into ventures including food, fashion, science learning, creative design, beauty services and youth platforms.",
   },
   {
-    question: "What is the Girls Leadership Program?",
+    question: "What is the Action for Education program?",
     answer:
-      "The Girls Leadership Program empowers young girls through intensive training in leadership, communication, self-awareness, gender and development, technology and digital safety, research, and advocacy. 20 fellows from Khuzdar designed and implemented community-based projects, led awareness sessions, and organized a district-level STEM Science Festival for girls.",
-  },
-  {
-    question: "How does MRC help with climate resilience?",
-    answer:
-      "MRC works on climate and resilience through emergency response and food distributions during crises, repair and maintenance of water resources, winter item distributions through Apna Dastakhawn and Salani Welfare, Ramzan drives in dropout-affected communities, and DRR capacity building with the Start Network — combining immediate relief with long-term resilience.",
-  },
-  {
-    question: "What does MRC do for health rights?",
-    answer:
-      "MRC advocates for girls' and women's health rights through the Women Health Rights project by Awaz Foundation, youth health rights sessions in government girls' schools, mental health awareness and support initiatives, and community dialogue on reproductive health and rights — empowering young women to make informed decisions about their well-being.",
-  },
-  {
-    question: "How can I support MRC?",
-    answer:
-      "You can support MRC by donating to fund girls' education and community programs, volunteering your time and skills, partnering with us on initiatives, or contacting us to explore collaboration opportunities. Every action brings us closer to an empowered and inclusive Balochistan.",
-  },
-  {
-    question: "Where does MRC operate?",
-    answer:
-      "MRC operates primarily in Balochistan, Pakistan, with its model girls' school in Khuzdar. Our programs have reached 5+ districts across the province, working directly with rural communities to create lasting change through education, empowerment, and community-led development.",
+      "Supported by the Malala Fund, MRC selected 30 school-going girls from over 170 applicants and trained them as Education Champions in rights, leadership, research, digital skills and advocacy. Five youth-led teams implemented campaigns on rights, modern skills, digital inclusion, climate action and school retention. 73 girls reported returning to school through retention-focused action.",
   },
   {
     question: "What is the STEM Pioneers Project?",
     answer:
-      "The STEM Pioneers Project was a six-month initiative in Kalat District supported by the U.S. Consulate and the Pakistan-U.S. Alumni Network (PUAN). It engaged 5 girls' high schools, 80 students, and 20 teachers to promote practical STEM education. Key achievements include training STEM Ambassadors, establishing STEM and computer labs, and creating a sustainable STEM Education Network.",
+      "Supported by the U.S. Consulate Karachi and PUAN, STEM Pioneers was a six-month initiative in Kalat District engaging five girls' high schools, 80 students and 20 teachers through STEM awareness, practical training, digital skills, leadership and exposure. Student STEM Ambassadors supported peer activities while teachers adopted more participatory approaches.",
   },
   {
-    question: "What impact has MRC made so far?",
+    question: "What is the Future CEOs program?",
     answer:
-      "MRC's impact includes: 231+ girls enrolled in school, 40+ fellows trained as leaders, 5+ districts reached (including Kalat through STEM Pioneers), and 14+ start-ups launched by young women. We've completed 12+ projects with 3 currently ongoing, building a network of confident young female leaders across Balochistan.",
+      "In partnership with Kidvation Global, 20 students in Grades 5–9 completed 37 sessions over four months on self-awareness, teamwork, leadership, innovation, business planning, communication, finance and markets. Participants developed products and showcased enterprises through a public festival.",
+  },
+  {
+    question: "How does MRC help with climate resilience?",
+    answer:
+      "MRC has 35 Climate Change Advocates who engaged young people, schools, communities and markets. Their work contributed to 500 trees being planted, participating schools ending polythene-bag use, and shopkeepers encouraging customers to avoid single-use plastic bags. We also responded to 3 emergencies and facilitated 300 families during COVID-19.",
+  },
+  {
+    question: "What impact has MRC made?",
+    answer:
+      "MRC's verified impact includes: 180 schools reached, 1,800+ girls trained on STEM, 1,300+ girls returned to school, 700 teachers trained, 150 Education Champions, 150 girls completed leadership programs, 90 girls on Karachi exposure visits, 8,000 school girls engaged by fellows, 73 women enterprises established benefiting 225 families, 35 Climate Advocates, and 500 trees planted.",
+  },
+  {
+    question: "Where does MRC operate?",
+    answer:
+      "MRC operates primarily in 4 core districts: Khuzdar, Kalat, Lasbela/Hub, and Quetta, with experience in additional districts across Balochistan. We are headquartered in Khuzdar at Umer Farooq Chowk, Faizabad.",
+  },
+  {
+    question: "How can I support MRC?",
+    answer:
+      "You can support MRC by donating to fund girls' education and community programs, volunteering your time and skills, partnering with us on initiatives, or contacting us to explore collaboration opportunities. We welcome multi-year programme funding, co-funded initiatives, technical assistance, research partnerships, and technology support.",
+  },
+  {
+    question: "Who are MRC's partners?",
+    answer:
+      "MRC works with: Malala Fund, Women Fund Asia, U.S. Consulate Karachi, Pakistan-U.S. Alumni Network (PUAN), Kidvation Global, Science Fuse, Shaoor Foundation, and collaborates with Education Departments, district administrations, BUET Khuzdar, schools, parents, local leaders, youth groups, and civil society organizations.",
+  },
+  {
+    question: "What is MRC's delivery model?",
+    answer:
+      "MRC follows a 'Pilot → Learn → Mobilize → Advocate → Scale' model. We test ideas in real community settings, particularly through the School of Scholars, learn from implementation, build local champions, and then expand through schools, public institutions, networks and policy engagement. This makes MRC both a delivery partner and a locally grounded platform for systems change.",
   },
 ];
 
@@ -74,20 +79,14 @@ export default function ChatBot() {
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (
-        cardRef.current &&
-        !cardRef.current.contains(e.target as Node) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(e.target as Node)
+        cardRef.current && !cardRef.current.contains(e.target as Node) &&
+        buttonRef.current && !buttonRef.current.contains(e.target as Node)
       ) {
         setIsOpen(false);
         setSelectedQA(null);
       }
     }
-
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
+    if (isOpen) document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
@@ -95,7 +94,6 @@ export default function ChatBot() {
     <>
       {/* Floating Icon Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        {/* Attract bubble */}
         {!isOpen && (
           <div className="absolute bottom-16 right-0 animate-fade-in-up">
             <div className="relative rounded-2xl rounded-br-sm bg-white border border-zinc-200 px-4 py-2.5 shadow-lg shadow-zinc-200/60">
@@ -105,7 +103,6 @@ export default function ChatBot() {
             <div className="absolute -bottom-1.5 right-4 h-3 w-3 rotate-45 bg-white border-b border-r border-zinc-200" />
           </div>
         )}
-        {/* Pulse rings */}
         <span className="absolute inset-0 h-14 w-14 animate-ping rounded-full bg-primary-400/30" style={{ animationDuration: "2.5s" }} />
         <span className="absolute inset-0 h-14 w-14 animate-ping rounded-full bg-primary-400/20" style={{ animationDuration: "2.5s", animationDelay: "0.6s" }} />
         <button
@@ -115,15 +112,15 @@ export default function ChatBot() {
           style={{ animationDuration: "2s" }}
           aria-label="Chat with us"
         >
-        {isOpen ? (
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        ) : (
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-          </svg>
-        )}
+          {isOpen ? (
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+            </svg>
+          )}
         </button>
       </div>
 
@@ -151,7 +148,6 @@ export default function ChatBot() {
           {/* Body */}
           <div className="flex-1 overflow-y-auto p-4">
             {selectedQA ? (
-              /* Answer View */
               <div className="space-y-4">
                 <button
                   onClick={() => setSelectedQA(null)}
@@ -162,15 +158,11 @@ export default function ChatBot() {
                   </svg>
                   Back to questions
                 </button>
-
-                {/* User Question Bubble */}
                 <div className="flex justify-end">
                   <div className="max-w-[85%] rounded-2xl rounded-br-md bg-primary-500 px-4 py-3 text-sm text-white shadow-sm">
                     {selectedQA.question}
                   </div>
                 </div>
-
-                {/* Answer Bubble */}
                 <div className="flex gap-2">
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary-500 to-primary-700 text-[10px] font-bold text-white">
                     MRC
@@ -181,7 +173,6 @@ export default function ChatBot() {
                 </div>
               </div>
             ) : (
-              /* Questions List */
               <div className="space-y-3">
                 <p className="text-xs font-medium uppercase tracking-wider text-zinc-400">
                   Frequently Asked Questions

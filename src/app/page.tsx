@@ -23,15 +23,19 @@ export default function Home() {
         <div className="relative flex w-full max-w-6xl mx-auto flex-col items-center lg:grid lg:grid-cols-2 lg:items-stretch gap-8 lg:gap-16">
           {/* Left column — text + stats */}
           <div className="flex flex-col justify-center space-y-4 sm:space-y-5 text-center lg:text-left">
-            <h1
-              className="text-4xl font-bold leading-tight tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl animate-fade-in-left"
-              style={{ animationDelay: "0ms" }}
-            >
-              Mechanism for Relational{" "}
-              <span className="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
-                Change
-              </span>
-            </h1>
+            <div className="flex items-center gap-3 animate-fade-in-left" style={{ animationDelay: "0ms" }}>
+              <h1
+                className="text-4xl font-bold leading-tight tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl"
+              >
+                Mechanism for Rational{" "}
+                <span className="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
+                  Change
+                </span>
+              </h1>
+            </div>
+            <p className="text-sm font-semibold text-primary-600 animate-fade-in-left" style={{ animationDelay: "100ms" }}>
+              Since 2014 • 80% Women Staff
+            </p>
 
             <p
               className="max-w-md mx-auto lg:mx-0 text-base leading-relaxed text-zinc-600 sm:text-lg animate-fade-in-left"
@@ -49,7 +53,7 @@ export default function Home() {
                 href="/donate"
                 className="rounded-full bg-primary-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-200/60 transition-all hover:bg-primary-700 hover:shadow-xl hover:-translate-y-0.5 active:scale-[0.97]"
               >
-                Support Education
+                Support Our Work
               </a>
               <a
                 href="/what-we-do"
@@ -64,9 +68,9 @@ export default function Home() {
               style={{ animationDelay: "600ms" }}
             >
               {[
-                { label: "Girls Schools", value: "1300+" },
-                { label: "Completed Projects", value: "12+" },
-                { label: "On Going Projects", value: "3" },
+                { label: "Schools Reached", value: "180" },
+                { label: "Girls on STEM", value: "1,800+" },
+                { label: "Women Entrepreneurs", value: "73" },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
@@ -252,10 +256,10 @@ export default function Home() {
             {/* Stats grid */}
             <div className="grid gap-5 sm:grid-cols-2 lg:col-span-3">
               {[
-                { value: "231+", label: "Girls Enrolled in School", icon: "M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" },
-                { value: "40+", label: "Fellows Trained as Leaders", icon: "M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" },
-                { value: "5+", label: "Districts Reached", icon: "M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" },
-                { value: "14+", label: "Start-ups Launched", icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" },
+                { value: "180", label: "Schools Reached", icon: "M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" },
+                { value: "1,800+", label: "Girls Trained on STEM", icon: "M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" },
+                { value: "4", label: "Core Districts", icon: "M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" },
+                { value: "73", label: "Women Entrepreneurs", icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
@@ -452,7 +456,7 @@ export default function Home() {
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
-                Donate Now
+                Support Our Work
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>

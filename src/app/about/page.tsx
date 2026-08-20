@@ -52,10 +52,10 @@ const districts = [
 
 const timeline = [
   {
-    year: "2015",
-    title: "Founded",
+    year: "2014",
+    title: "Founded & Registered",
     description:
-      "MRC was established under the Societies Registration Act as a legally registered, women-led non-profit in Khuzdar, Balochistan.",
+      "MRC was founded and registered under BCRA (Balochistan Civil Registration Act) as a legally registered, women-led non-profit in Khuzdar, Balochistan.",
   },
   {
     year: "2015–2020",
@@ -65,9 +65,9 @@ const timeline = [
   },
   {
     year: "2020",
-    title: "School of Scholars",
+    title: "School of Scholars Launched",
     description:
-      "Launched Khuzdar's first girls' school introducing STEM and leadership education a model institution for the region.",
+      "Launched Khuzdar's first girls' school introducing STEM and leadership education — a model institution for the region.",
   },
   {
     year: "2022",
@@ -146,9 +146,9 @@ export default function About() {
           </h1>
           <p className="mx-auto mt-5 max-w-3xl animate-fade-in-up text-base leading-relaxed text-zinc-600 sm:text-lg" style={{ animationDelay: "300ms" }}>
             Mechanism for Rational Change (MRC) is a legally registered, women-led non-profit organization
-            based in Khuzdar, Balochistan, Pakistan. Established in 2015, we are dedicated to empowering
-            women, children, and youth through education, leadership, entrepreneurship, mental health,
-            climate action, and skill enhancement.
+            founded in 2014 and headquartered in Khuzdar, Balochistan, Pakistan. With approximately 80% women staff,
+            we support women, girls, children and young people through education, leadership, entrepreneurship,
+            mental health and wellbeing, climate action, disaster resilience and community advocacy.
           </p>
           <p className="mx-auto mt-4 max-w-3xl animate-fade-in-up text-sm leading-relaxed text-zinc-500" style={{ animationDelay: "450ms" }}>
             Our unique approach focuses on practicing ideas before scaling them. Through our model institution,

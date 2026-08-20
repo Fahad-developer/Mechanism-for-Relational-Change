@@ -30,16 +30,82 @@ export default async function EventsPage() {
         </div>
 
         {events.length === 0 ? (
-          <div className="mt-16 animate-fade-in-up text-center">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary-100 text-primary-500">
-              <svg className="h-12 w-12" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-              </svg>
-            </div>
-            <h3 className="mt-6 text-lg font-semibold text-zinc-700">No upcoming events</h3>
-            <p className="mt-2 text-sm text-zinc-500">
-              Check back soon for new events and programs.
-            </p>
+          <div className="mt-14 space-y-6">
+            {/* Static upcoming events */}
+            {[
+              {
+                title: "Girls Leadership Program — Cohort 3 Inauguration",
+                date: "September 15, 2026",
+                month: "Sep",
+                day: 15,
+                time: "10:00 AM",
+                location: "School of Scholars, Khuzdar",
+                description: "Inauguration ceremony for the third cohort of the Girls Leadership Program, welcoming 20 new fellows from Khuzdar and surrounding areas.",
+              },
+              {
+                title: "STEM Science Festival for Girls",
+                date: "October 5, 2026",
+                month: "Oct",
+                day: 5,
+                time: "9:00 AM",
+                location: "District Education Office, Kalat",
+                description: "Annual science festival showcasing STEM projects by girls from five high schools in Kalat District, featuring innovation challenges and science exhibitions.",
+              },
+              {
+                title: "Climate Resilience Workshop",
+                date: "October 20, 2026",
+                month: "Oct",
+                day: 20,
+                time: "2:00 PM",
+                location: "Community Center, Kohlu",
+                description: "Capacity building workshop for community leaders on disaster risk reduction, water resource management, and emergency response planning.",
+              },
+              {
+                title: "Women Enterprise Summit",
+                date: "November 10, 2026",
+                month: "Nov",
+                day: 10,
+                time: "11:00 AM",
+                location: "Hotel Bloomstar, Quetta",
+                description: "Summit bringing together women entrepreneurs from MRC's programs to share experiences, network, and explore partnership opportunities.",
+              },
+            ].map((event, i) => (
+              <div
+                key={i}
+                className="animate-fade-in-up group relative overflow-hidden rounded-2xl border border-zinc-200/60 bg-white/70 backdrop-blur-sm p-6 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-lg sm:p-8"
+                style={{ animationDelay: `${i * 150}ms` }}
+              >
+                <div className="flex flex-col gap-6 sm:flex-row">
+                  <div className="flex shrink-0 flex-col items-center justify-center self-start rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 px-5 py-3 text-white shadow-md shadow-primary-200/40 sm:w-20">
+                    <span className="text-xs font-semibold uppercase tracking-wider">{event.month}</span>
+                    <span className="text-2xl font-bold">{event.day}</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold text-zinc-800 transition-colors group-hover:text-primary-700">
+                      {event.title}
+                    </h3>
+                    <div className="mt-3 flex flex-wrap gap-3 text-sm text-zinc-500">
+                      <span className="inline-flex items-center gap-1.5">
+                        <svg className="h-4 w-4 text-primary-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        {event.time}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <svg className="h-4 w-4 text-primary-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                        {event.location}
+                      </span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                      {event.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         ) : (
           <div className="mt-14 space-y-6">

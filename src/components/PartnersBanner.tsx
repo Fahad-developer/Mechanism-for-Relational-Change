@@ -4,6 +4,7 @@ const partners = [
   { name: "NHN", src: "/banner/NHN-removebg.png" },
   { name: "Awaz Foundation", src: "/banner/awaz-removebg.png" },
   { name: "IDSP", src: "/banner/idsp-removebg.png" },
+  { name: "Khuzdar Community", src: "/banner/khuzdar-community.png" },
   { name: "Malala Fund", src: "/banner/malalala-removebg.png" },
   { name: "PPAF", src: "/banner/ppaf.png" },
   { name: "Start Network", src: "/banner/startnetwork-removebg.png" },

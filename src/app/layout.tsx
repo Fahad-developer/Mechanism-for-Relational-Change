@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MRC | Mechanism for Relational Change",
+  title: "MRC | Mechanism for Rational Change",
   description:
     "MRC empowers women and girls in rural Balochistan through education, building schools and creating lasting change.",
   icons: [{ rel: "icon", url: "/mrclogo.png", type: "image/png" }],

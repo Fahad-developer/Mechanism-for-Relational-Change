@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const quickLinks = [
   { label: "About Us", href: "/about" },
+  { label: "Our Impact", href: "/impact" },
+  { label: "Leadership", href: "/leadership" },
   { label: "Our Programs", href: "/what-we-do" },
+  { label: "Reports & Policies", href: "/reports" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
@@ -35,9 +38,10 @@ export default function FooterWrapper() {
                 className="rounded-lg"
               />
               <span className="text-lg font-semibold text-white">MRC</span>
+              <span className="text-xs text-zinc-500">Since 2014</span>
             </div>
             <p className="max-w-xs text-sm leading-relaxed">
-              Mechanism for Relational Change empowering women and girls
+              Mechanism for Rational Change empowering women and girls
               through education in rural Balochistan.
             </p>
             <div className="flex gap-3 pt-1">
@@ -91,7 +95,7 @@ export default function FooterWrapper() {
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
-                Saddullah Street Umer Farooq Chowk Khuzdar, Baluchistan, Pakistan.
+                Umer Farooq Chowk, Faizabad, Khuzdar, Balochistan, Pakistan.
               </li>
               <li className="flex items-start gap-2">
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-500" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
@@ -109,7 +113,7 @@ export default function FooterWrapper() {
           </div>
         </div>
         <div className="mt-10 sm:mt-12 border-t border-zinc-800 pt-6 sm:pt-8 text-center text-xs text-zinc-600">
-          &copy; {new Date().getFullYear()} MRC — Mechanism for Relational Change. All
+          &copy; {new Date().getFullYear()} MRC — Mechanism for Rational Change. All
           rights reserved.
         </div>
       </div>
