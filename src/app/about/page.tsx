@@ -58,16 +58,16 @@ const timeline = [
       "MRC was founded and registered under BCRA (Balochistan Civil Registration Act) as a legally registered, women-led non-profit in Khuzdar, Balochistan.",
   },
   {
-    year: "2015–2020",
-    title: "Community Piloting",
-    description:
-      "Built grassroots trust by piloting education and empowerment programs at the community level, refining the approach before scaling.",
-  },
-  {
-    year: "2020",
+    year: "2015",
     title: "School of Scholars Launched",
     description:
       "Launched Khuzdar's first girls' school introducing STEM and leadership education — a model institution for the region.",
+  },
+  {
+    year: "2015–2022",
+    title: "Community Piloting & Growth",
+    description:
+      "Built grassroots trust by piloting education and empowerment programs at the community level, refining the approach before scaling.",
   },
   {
     year: "2022",
