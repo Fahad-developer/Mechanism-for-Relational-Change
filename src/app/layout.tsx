@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import FooterWrapper from "@/components/FooterWrapper";
 import ChatBotWrapper from "@/components/ChatBotWrapper";
@@ -31,6 +32,7 @@ export default function RootLayout({
         <FooterWrapper />
         <ChatBotWrapper />
         <EventsFloatingWrapper />
+        <Analytics />
       </body>
     </html>
   );
