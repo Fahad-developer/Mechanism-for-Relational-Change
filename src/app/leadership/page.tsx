@@ -224,7 +224,7 @@ export default function LeadershipPage() {
             <span className="bg-gradient-to-r from-accent-300 to-accent-400 bg-clip-text text-transparent">Join</span> Our Mission?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-emerald-100/80">
-            Whether you want to volunteer, partner, or support our work — we&apos;d love to hear from you.
+            Whether you want to volunteer, partner, or support our work we&apos;d love to hear from you.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
