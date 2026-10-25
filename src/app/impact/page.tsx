@@ -216,34 +216,194 @@ function ScrollTicker() {
   );
 }
 
-const fullEssayParagraphs = [
-  "At ten years old, I had a big dream: I wanted to go to space. Growing up in Khuzdar, Balochistan, I knew it was a huge dream—but I never believed I should think small.",
-  "My curiosity about science started early. I wanted to experiment, understand how things worked, and discover more than what was written in my schoolbooks. When I became part of Science Fuse, science came alive for me. I could experiment, ask questions, and share what I learned with others.",
-  "But as I learned, I also started noticing the girls around me. So many had ideas and dreams but not always the opportunities to explore them. I began asking myself, “What if I could do something about that?”",
-  "That question led me toward STEM education, girls’ education, climate action, and youth leadership. Through different initiatives, I have reached hundreds of girls through STEM and education activities. For me, the real impact isn't the number—it is seeing a girl discover her love for science, find her confidence, or believe in her future.",
-  "Then came MRC Balochistan. MRC gave me a space to grow my voice and understand what leadership and advocacy really mean. I learned about education, gender, research, technology, communication, and critical thinking. I learned that creating change isn't always about speaking for others—it can be about creating space for others to speak for themselves.",
-  "My journey also took me into writing. At fifteen, I wrote my first book, She Built Her Own Legacy, encouraging young people to believe that leadership isn't something they have to wait to become “old enough” for. Publishing it in June 2026 was a proud moment, but it felt more like a new beginning.",
-  "Climate action became another important part of my journey. Growing up in Khuzdar, I have seen how heat, water shortages, and the 2022 floods affected communities, schools, and families. It made me understand that climate, education, and girls’ rights are deeply connected.",
-  "Looking back, the biggest change MRC brought into my life isn't just what I have achieved—it is how I think. I learned that change can begin with something as simple as a question, a conversation, a workshop, or one girl deciding not to give up on her dream.",
-  "Today, I am still sixteen, still learning, and still figuring out where my journey will take me. I want to explore computer science and cybersecurity while continuing to grow as a leader.",
-  "When I was ten, I looked at the sky and thought, “Why not me?” Today, I look at the girls around me and ask, “Why not us?” I want to dream big, but I want to make sure there is more space for other girls to dream big with me.",
+const changemakerStories = [
+  {
+    id: "aleena",
+    tabLabel: "Aleena Baloch (Author & STEM)",
+    name: "Aleena Baloch",
+    authorLabel: "Aleena Baloch • Author & MRC Changemaker",
+    tagline: "Lived Impact • Real Voice",
+    location: "Khuzdar, Balochistan",
+    title: {
+      before: "From Asking ",
+      highlight1: "“Why Not Me?”",
+      middle: " to Asking ",
+      highlight2: "“Why Not Us?”",
+    },
+    quote:
+      "“When I was ten, I looked at the sky and thought, ‘Why not me?’ Today, I look at the girls around me and ask, ‘Why not us?’ I want to dream big, but make sure there is more space for other girls to dream big with me.”",
+    paragraphs: [
+      "Growing up in Khuzdar, Aleena turned a childhood fascination with space into grassroots youth action. Supported by Science Fuse and MRC Balochistan, she found her voice in STEM, led climate resilience activities after the 2022 floods, and learned that creating change is about creating space for others to speak for themselves.",
+      "At fifteen, she authored her first book, She Built Her Own Legacy (March 2026). Now sixteen, she is exploring computer science and cybersecurity while opening doors for girls across rural Balochistan.",
+    ],
+    chips: [
+      { icon: "🚀", text: "Space & Science Curiosity" },
+      { icon: "🔬", text: "Hundreds Reached in STEM" },
+      { icon: "📖", text: "Published Author at 15" },
+      { icon: "🌿", text: "Climate & Flood Resilience" },
+    ],
+    ctaText: "Support Girls in STEM",
+    ctaLink: "/donate",
+    fullEssay: {
+      badge: "Full Impact Essay • Khuzdar, Balochistan",
+      title: "From Asking “Why Not Me?” to Asking “Why Not Us?”",
+      subtitle: "By Aleena Baloch • Published alongside “She Built Her Own Legacy”",
+      footerRole: "16-Year-Old Author & STEM Advocate",
+      paragraphs: [
+        "At ten years old, I had a big dream: I wanted to go to space. Growing up in Khuzdar, Balochistan, I knew it was a huge dream—but I never believed I should think small.",
+        "My curiosity about science started early. I wanted to experiment, understand how things worked, and discover more than what was written in my schoolbooks. When I became part of Science Fuse, science came alive for me. I could experiment, ask questions, and share what I learned with others.",
+        "But as I learned, I also started noticing the girls around me. So many had ideas and dreams but not always the opportunities to explore them. I began asking myself, “What if I could do something about that?”",
+        "That question led me toward STEM education, girls’ education, climate action, and youth leadership. Through different initiatives, I have reached hundreds of girls through STEM and education activities. For me, the real impact isn't the number—it is seeing a girl discover her love for science, find her confidence, or believe in her future.",
+        "Then came MRC Balochistan. MRC gave me a space to grow my voice and understand what leadership and advocacy really mean. I learned about education, gender, research, technology, communication, and critical thinking. I learned that creating change isn't always about speaking for others—it can be about creating space for others to speak for themselves.",
+        "My journey also took me into writing. At fifteen, I wrote my first book, She Built Her Own Legacy, encouraging young people to believe that leadership isn't something they have to wait to become “old enough” for. Publishing it in March 2026 was a proud moment, but it felt more like a new beginning.",
+        "Climate action became another important part of my journey. Growing up in Khuzdar, I have seen how heat, water shortages, and the 2022 floods affected communities, schools, and families. It made me understand that climate, education, and girls’ rights are deeply connected.",
+        "Looking back, the biggest change MRC brought into my life isn't just what I have achieved—it is how I think. I learned that change can begin with something as simple as a question, a conversation, a workshop, or one girl deciding not to give up on her dream.",
+        "Today, I am still sixteen, still learning, and still figuring out where my journey will take me. I want to explore computer science and cybersecurity while continuing to grow as a leader.",
+        "When I was ten, I looked at the sky and thought, “Why not me?” Today, I look at the girls around me and ask, “Why not us?” I want to dream big, but I want to make sure there is more space for other girls to dream big with me.",
+      ],
+    },
+  },
+  {
+    id: "awisha",
+    tabLabel: "Awisha (Founder of YEAC)",
+    name: "Awisha",
+    authorLabel: "Awisha • Founder of YEAC & Youth Advocate",
+    tagline: "Youth Empowerment • Action For Change",
+    location: "Balochistan",
+    title: {
+      before: "From ",
+      highlight1: "“What Can I Do?”",
+      middle: " to ",
+      highlight2: "“Let’s Do This”",
+    },
+    quote:
+      "“I once dreamed about my own future. Today, I dream about what becomes possible when every girl has the opportunity to choose hers.”",
+    paragraphs: [
+      "My time with MRC Balochistan transformed how I see myself, my leadership, and my responsibility toward society. MRC gave me a safe and supportive space where my ideas were respected, my potential was recognized, and my confidence was strengthened.",
+      "Through MRC, I developed leadership, advocacy, communication, teamwork, and community-engagement skills. Most importantly, I learned to trust my voice and use it for girls whose dreams and concerns often remain unheard.",
+      "Today, through Youth Empowerment and Action for Change (YEAC), my team creates opportunities for young people across Balochistan to act on girls’ education, STEM, climate action, mental health, peacebuilding, and child rights.",
+    ],
+    chips: [
+      { icon: "🌟", text: "Founder of YEAC" },
+      { icon: "🏫", text: "10 Schools Committed to STEM" },
+      { icon: "🗣️", text: "District & Tribal Advocacy" },
+      { icon: "🛡️", text: "Child Rights & Mental Health" },
+    ],
+    ctaText: "Support Youth Advocacy",
+    ctaLink: "/donate",
+    fullEssay: {
+      badge: "Advocacy Journey • Balochistan",
+      title: "From “What Can I Do?” to “Let’s Do This”",
+      subtitle: "By Awisha • Founder of YEAC and Youth Advocate",
+      footerRole: "Founder of YEAC & Youth Advocate",
+      paragraphs: [
+        "I once dreamed about my own future. Today, I dream about what becomes possible when every girl has the opportunity to choose hers.",
+        "My time with MRC Balochistan transformed how I see myself, my leadership, and my responsibility toward society. MRC gave me a safe and supportive space where my ideas were respected, my potential was recognized, and my confidence was strengthened.",
+        "Through MRC, I developed leadership, advocacy, communication, teamwork, and community-engagement skills. Most importantly, I learned to trust my voice and use it for girls whose dreams and concerns often remain unheard.",
+        "Today, I use this strength through Youth Empowerment and Action for Change (YEAC). With my team, I create opportunities for young people to learn, speak, and act on girls’ education, STEM, climate action, mental health, peacebuilding, child rights, and protection.",
+        "The confidence MRC gave me helped me represent girls before district authorities and community leaders. Our advocacy enabled YEAC to receive permission to work in schools, secured commitments from ten schools to support girls’ education and STEM, and inspired a tribal elder to publicly support girls’ education.",
+        "MRC taught me that when young people are trusted and supported, their ideas can transform communities.",
+        "I no longer ask, “What can I do?” Now I say, “Let’s do this—”",
+        "Awisha — Founder of YEAC and Youth Advocate",
+      ],
+    },
+  },
+  {
+    id: "misbah",
+    tabLabel: "Misbah (Education Advocate)",
+    name: "Misbah",
+    authorLabel: "Misbah • Action for Education Fellow & Youth Advocate",
+    tagline: "Action For Education • Young Advocate",
+    location: "Balochistan",
+    title: {
+      before: "The Space That ",
+      highlight1: "Allowed Me",
+      middle: " to ",
+      highlight2: "Become More",
+    },
+    quote:
+      "“MRC did not tell me who to become. It gave me the space, trust, and opportunities to discover it for myself.”",
+    paragraphs: [
+      "I carried a deep desire to create, question, and contribute, but did not always have a space where my ideas were encouraged. At MRC, my voice mattered, and for the first time, I felt free to express myself without fear of judgment.",
+      "Through the Action for Education Fellowship, I engaged with students, teachers, and communities to champion girls’ right to education. From standing onstage at the Youth Summit to connecting with global champions, I learned that a young person’s voice can travel much further than they imagine.",
+    ],
+    chips: [
+      { icon: "🎓", text: "Action for Education Fellow" },
+      { icon: "🎤", text: "Youth Summit Speaker" },
+      { icon: "🤝", text: "Community & Parent Outreach" },
+      { icon: "✨", text: "Speaking for the Unheard" },
+    ],
+    ctaText: "Support Education Champions",
+    ctaLink: "/donate",
+    fullEssay: {
+      badge: "Fellowship Journey • Balochistan",
+      title: "The Space That Allowed Me to Become More",
+      subtitle: "By Misbah • Action for Education Fellow & Young Education Advocate",
+      footerRole: "Action for Education Fellow & Youth Advocate",
+      paragraphs: [
+        "I had always been curious about the world—the people I might meet, the lessons I could learn, and the person I could become. I carried a deep desire to create, question, and contribute, but I did not always have a space where my ideas were understood or encouraged.",
+        "Then I found the Mechanism for Rational Change (MRC).",
+        "At MRC, my questions were welcomed, my ideas were taken seriously, and my voice mattered. For the first time, I felt free to express myself without fear of judgment. MRC saw potential in me before I had fully learned to see it in myself.",
+        "Through the Action for Education Fellowship, MRC gave me practical opportunities to learn beyond classrooms and books. I engaged with students, teachers, parents, and communities while advocating for girls’ right to education. These experiences helped me understand how social attitudes and local environments influence a girl’s future—and how young people can help transform both.",
+        "MRC did more than build my advocacy skills. It provided mentorship, encouragement, practical exposure, and a supportive community in which I could learn through action. I developed communication, leadership, critical-thinking, teamwork, and community-engagement skills. Most importantly, I learned how to speak not only for myself but also alongside girls whose voices are often overlooked.",
+        "Some of my most meaningful lessons were quiet ones. MRC taught me kindness, patience, forgiveness, and the importance of listening. I stopped comparing my progress with others and began focusing on becoming a better version of myself.",
+        "At MRC, the competition was never with one another—it was with the person we were yesterday.",
+        "One of the most powerful moments in my journey came when I stood onstage at the Youth Summit to present our work. As I looked at the audience, I remembered the girl who once struggled to express her ideas. I felt nervous, but I also felt prepared, capable, and proud.",
+        "That moment showed me how far I had come.",
+        "Soon, I began witnessing change beyond myself. Teachers, students, and community members started responding differently to our advocacy. People who were once uncertain began listening. Communities became more open to supporting girls, and people began asking how girls in their own areas could participate and lead.",
+        "Meeting education champions from other provinces who were inspired by our work made me realize that a young person’s voice can travel much further than they imagine.",
+        "The greatest gift MRC gave me was not a title or an achievement. It was a new way of seeing myself. I now believe that my ideas have value, my voice can contribute, and I do not have to wait for someone else to begin creating change.",
+        "My fellowship left me with one powerful question: What could happen if we all did our part?",
+        "Your age does not determine your potential. You can question. You can learn. You can lead. You can begin. Sometimes, change begins when one young person discovers that her voice is worth hearing—and finds the courage and opportunity to use it.",
+      ],
+    },
+  },
 ];
 
 /* ── Main Component ── */
 export default function ImpactPage() {
-  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
-  const [essayModalOpen, setEssayModalOpen] = useState<boolean>(false);
+  const [activeStoryIndex, setActiveStoryIndex] = useState<number>(0);
+  const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
+  const [readingStory, setReadingStory] = useState<(typeof changemakerStories)[0] | null>(null);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
-        setLightboxImg(null);
-        setEssayModalOpen(false);
+        setLightbox(null);
+        setReadingStory(null);
+      } else if (e.key === "ArrowLeft") {
+        setActiveStoryIndex((prev) => (prev - 1 + changemakerStories.length) % changemakerStories.length);
+      } else if (e.key === "ArrowRight") {
+        setActiveStoryIndex((prev) => (prev + 1) % changemakerStories.length);
       }
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+    const distance = touchStartX - touchEndX;
+    const isLeftSwipe = distance > 45;
+    const isRightSwipe = distance < -45;
+    if (isLeftSwipe) {
+      setActiveStoryIndex((prev) => (prev + 1) % changemakerStories.length);
+    } else if (isRightSwipe) {
+      setActiveStoryIndex((prev) => (prev - 1 + changemakerStories.length) % changemakerStories.length);
+    }
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
   return (
     <>
       <style>{`
@@ -394,8 +554,8 @@ export default function ImpactPage() {
         </section>
       ))}
 
-      {/* ═══════════════ FEATURED IMPACT STORY (COMPACT SPOTLIGHT) ═══════════════ */}
-      <section id="featured-story" className="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-teal-950 px-6 py-16 sm:py-20 lg:px-8 text-white">
+      {/* ═══════════════ FEATURED IMPACT STORIES (SLIDER) ═══════════════ */}
+      <section id="featured-story" className="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-teal-950 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 text-white">
         <Particles />
         <div className="pointer-events-none absolute -left-40 -top-40 h-[450px] w-[450px] rounded-full bg-accent-400/10 blur-3xl animate-float" />
         <div className="pointer-events-none absolute -bottom-40 -right-40 h-[450px] w-[450px] rounded-full bg-primary-400/15 blur-3xl animate-float-reverse" />
@@ -408,132 +568,462 @@ export default function ImpactPage() {
         />
 
         <div className="relative mx-auto max-w-6xl">
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-            {/* ── Left: Duo Image Showcase ── */}
-            <div className="lg:col-span-5">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-md mx-auto lg:max-w-none">
-                {/* Image 1: Book Launch */}
-                <div
-                  onClick={() => setLightboxImg("/story/NQKJ2295.JPG")}
-                  className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-accent-400/60"
-                  title="Click to view full size"
-                >
-                  <Image
-                    src="/story/NQKJ2295.JPG"
-                    alt="Aleena Baloch with her book She Built Her Own Legacy"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 260px"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
-                  <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-accent-300 backdrop-blur-md">
-                    Book Launch
-                  </span>
-                  <div className="absolute bottom-3 inset-x-3">
-                    <p className="text-xs sm:text-sm font-bold text-white leading-tight">She Built Her Own Legacy</p>
-                    <p className="mt-0.5 text-[10px] text-accent-200">Published June 2026</p>
-                  </div>
-                </div>
-
-                {/* Image 2: Portrait */}
-                <div
-                  onClick={() => setLightboxImg("/story/IMG_1091.JPG")}
-                  className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-emerald-400/60 sm:translate-y-4"
-                  title="Click to view full size"
-                >
-                  <Image
-                    src="/story/IMG_1091.JPG"
-                    alt="Portrait of Aleena Baloch"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 260px"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
-                  <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 backdrop-blur-md">
-                    Age 16
-                  </span>
-                  <div className="absolute bottom-3 inset-x-3">
-                    <p className="text-xs sm:text-sm font-bold text-white leading-tight">Aleena Baloch</p>
-                    <p className="mt-0.5 text-[10px] text-emerald-200">Khuzdar, Balochistan</p>
-                  </div>
-                </div>
-              </div>
-              <p className="mt-4 text-center text-[11px] text-white/50 sm:text-left sm:pl-2">
-                Click any photo to view full size
-              </p>
+          {/* ── Slider Top Bar / Controls ── */}
+          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-white/10 pb-5">
+            <div className="flex items-center gap-3">
+              <span className="flex items-center gap-2 rounded-full border border-accent-400/30 bg-accent-400/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-accent-300 backdrop-blur-md">
+                <span className="h-2 w-2 rounded-full bg-accent-400 animate-pulse" />
+                Featured Changemakers
+              </span>
+              <span className="text-xs font-medium text-white/50">
+                Story <span className="font-bold text-white">{activeStoryIndex + 1}</span> of {changemakerStories.length}
+              </span>
             </div>
 
-            {/* ── Right: Compact, Punchy Narrative ── */}
-            <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
-              <div className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-accent-400 animate-pulse" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-accent-300">
-                  Lived Impact • Real Voice
-                </span>
+            <div className="flex items-center justify-between sm:justify-end gap-3 flex-wrap">
+              {/* Story Selector Pills */}
+              <div className="flex items-center gap-1.5 rounded-full bg-white/5 p-1 border border-white/10 backdrop-blur-md">
+                {changemakerStories.map((story, idx) => (
+                  <button
+                    key={story.id}
+                    type="button"
+                    onClick={() => setActiveStoryIndex(idx)}
+                    className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition-all duration-300 ${
+                      activeStoryIndex === idx
+                        ? "bg-gradient-to-r from-accent-400 to-amber-500 text-zinc-950 shadow-md shadow-accent-400/20 scale-[1.02]"
+                        : "text-white/70 hover:text-white hover:bg-white/10"
+                    }`}
+                  >
+                    {story.tabLabel}
+                  </button>
+                ))}
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
-                From Asking <span className="text-accent-300">“Why Not Me?”</span> to Asking <span className="text-emerald-300">“Why Not Us?”</span>
-              </h2>
-
-              <blockquote className="border-l-2 border-accent-400/80 bg-white/[0.03] rounded-r-2xl py-2.5 px-4 text-sm sm:text-base italic text-emerald-100/90 leading-relaxed backdrop-blur-sm">
-                “When I was ten, I looked at the sky and thought, <strong className="text-white not-italic font-bold">‘Why not me?’</strong> Today, I look at the girls around me and ask, <strong className="text-accent-300 not-italic font-bold">‘Why not us?’</strong> I want to dream big, but make sure there is more space for other girls to dream big with me.”
-              </blockquote>
-
-              <div className="space-y-2 text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
-                <p>
-                  Growing up in Khuzdar, Aleena turned a childhood fascination with space into grassroots youth action. Supported by Science Fuse and MRC Balochistan, she found her voice in STEM, led climate resilience activities after the 2022 floods, and learned that creating change is about creating space for others to speak for themselves.
-                </p>
-                <p>
-                  At fifteen, she authored her first book, <span className="text-white font-semibold">She Built Her Own Legacy</span> (June 2026). Now sixteen, she is exploring computer science and cybersecurity while opening doors for girls across rural Balochistan.
-                </p>
-              </div>
-
-              {/* 4 quick highlight chips */}
-              <div className="grid grid-cols-2 gap-2 pt-1">
-                <div className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90">
-                  <span>🚀</span> <span>Space & Science Curiosity</span>
-                </div>
-                <div className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90">
-                  <span>🔬</span> <span>Hundreds Reached in STEM</span>
-                </div>
-                <div className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90">
-                  <span>📖</span> <span>Published Author at 15</span>
-                </div>
-                <div className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90">
-                  <span>🌿</span> <span>Climate & Flood Resilience</span>
-                </div>
-              </div>
-
-              {/* Action buttons */}
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+              {/* Prev / Next Arrow Buttons */}
+              <div className="flex items-center gap-1.5">
                 <button
                   type="button"
-                  onClick={() => setEssayModalOpen(true)}
-                  className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                  onClick={() => setActiveStoryIndex((prev) => (prev - 1 + changemakerStories.length) % changemakerStories.length)}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white backdrop-blur-md transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                  aria-label="Previous Story"
+                  title="Previous Story"
                 >
-                  <span>📖 Read Full Essay</span>
+                  ←
                 </button>
-                <a
-                  href="/donate"
-                  className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-400 to-amber-500 px-5 py-2.5 text-xs font-bold text-zinc-950 shadow-md shadow-accent-400/20 transition-all hover:scale-105 active:scale-95"
+                <button
+                  type="button"
+                  onClick={() => setActiveStoryIndex((prev) => (prev + 1) % changemakerStories.length)}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white backdrop-blur-md transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                  aria-label="Next Story"
+                  title="Next Story"
                 >
-                  <span>Support Girls in STEM</span>
-                  <span>→</span>
-                </a>
+                  →
+                </button>
               </div>
             </div>
+          </div>
+
+          {/* ── Sliding Track Container ── */}
+          <div
+            className="overflow-hidden"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div
+              className="flex transition-transform duration-500 ease-out"
+              style={{ transform: `translateX(-${activeStoryIndex * 100}%)` }}
+            >
+              {/* ════════ SLIDE 1: ALEENA BALOCH ════════ */}
+              <div className="w-full shrink-0 min-w-full px-1">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+                  {/* Left: Duo Image Showcase */}
+                  <div className="lg:col-span-5">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-md mx-auto lg:max-w-none">
+                      {/* Image 1: Book Launch */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/NQKJ2295.JPG",
+                            caption: "Aleena Baloch with her book She Built Her Own Legacy (Published March 2026)",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-accent-400/60"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/NQKJ2295.JPG"
+                          alt="Aleena Baloch with her book She Built Her Own Legacy"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-accent-300 backdrop-blur-md">
+                          Book Launch
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">She Built Her Own Legacy</p>
+                          <p className="mt-0.5 text-[10px] text-accent-200">Published March 2026</p>
+                        </div>
+                      </div>
+
+                      {/* Image 2: Portrait */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/IMG_1091.JPG",
+                            caption: "Aleena Baloch • 16-Year-Old Author & STEM Advocate, Khuzdar",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-emerald-400/60 sm:translate-y-4"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/IMG_1091.JPG"
+                          alt="Portrait of Aleena Baloch"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 backdrop-blur-md">
+                          Age 16
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">Aleena Baloch</p>
+                          <p className="mt-0.5 text-[10px] text-emerald-200">Khuzdar, Balochistan</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="mt-4 text-center text-[11px] text-white/50 sm:text-left sm:pl-2">
+                      Click any photo to view full size
+                    </p>
+                  </div>
+
+                  {/* Right: Narrative */}
+                  <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent-400 animate-pulse" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-accent-300">
+                        {changemakerStories[0].tagline}
+                      </span>
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                      {changemakerStories[0].title.before}
+                      <span className="text-accent-300">{changemakerStories[0].title.highlight1}</span>
+                      {changemakerStories[0].title.middle}
+                      <span className="text-emerald-300">{changemakerStories[0].title.highlight2}</span>
+                    </h2>
+
+                    <blockquote className="border-l-2 border-accent-400/80 bg-white/[0.03] rounded-r-2xl py-2.5 px-4 text-sm sm:text-base italic text-emerald-100/90 leading-relaxed backdrop-blur-sm">
+                      {changemakerStories[0].quote}
+                    </blockquote>
+
+                    <div className="space-y-2 text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+                      {changemakerStories[0].paragraphs.map((p, i) => (
+                        <p key={i}>{p}</p>
+                      ))}
+                    </div>
+
+                    {/* Chips */}
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      {changemakerStories[0].chips.map((chip) => (
+                        <div
+                          key={chip.text}
+                          className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90"
+                        >
+                          <span>{chip.icon}</span> <span>{chip.text}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action buttons */}
+                    <div className="flex flex-wrap items-center gap-3 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => setReadingStory(changemakerStories[0])}
+                        className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                      >
+                        <span>📖 Read Full Essay</span>
+                      </button>
+                      <a
+                        href={changemakerStories[0].ctaLink}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-400 to-amber-500 px-5 py-2.5 text-xs font-bold text-zinc-950 shadow-md shadow-accent-400/20 transition-all hover:scale-105 active:scale-95"
+                      >
+                        <span>{changemakerStories[0].ctaText}</span>
+                        <span>→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ════════ SLIDE 2: AWISHA (YEAC) ════════ */}
+              <div className="w-full shrink-0 min-w-full px-1">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+                  {/* Left: Speaker Showcase Image & Cards */}
+                  <div className="lg:col-span-5 flex flex-col items-center">
+                    <div className="w-full max-w-md mx-auto lg:max-w-none space-y-3 sm:space-y-4">
+                      {/* Main Portrait / Podium Image */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/awisha.jpeg",
+                            caption: "Awisha • Founder of YEAC and Youth Advocate representing youth in Balochistan",
+                          })
+                        }
+                        className="group relative aspect-[4/3] sm:aspect-[16/11] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-accent-400/60"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/awisha.jpeg"
+                          alt="Awisha speaking at a podium as Founder of YEAC"
+                          fill
+                          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, 500px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2.5 py-0.5 text-[10px] font-semibold text-accent-300 backdrop-blur-md border border-accent-400/30">
+                          Youth Leader & Speaker
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3 sm:bottom-4 sm:inset-x-4">
+                          <p className="text-sm sm:text-base font-bold text-white leading-tight">Awisha</p>
+                          <p className="mt-0.5 text-xs text-accent-200 font-medium">Founder of YEAC & Youth Advocate • Balochistan</p>
+                        </div>
+                      </div>
+
+                      {/* Supplementary feature card */}
+                      <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                        <div className="rounded-xl border border-white/10 bg-white/[0.04] p-3 backdrop-blur-sm">
+                          <p className="text-base font-black text-accent-300">10 Schools</p>
+                          <p className="mt-0.5 text-[10px] text-white/70">Committed to Girls&apos; STEM & Education</p>
+                        </div>
+                        <div className="rounded-xl border border-white/10 bg-white/[0.04] p-3 backdrop-blur-sm">
+                          <p className="text-base font-black text-emerald-300">Grassroots</p>
+                          <p className="mt-0.5 text-[10px] text-white/70">Tribal Elder & District Support</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="mt-3 text-center text-[11px] text-white/50 sm:text-left sm:w-full sm:pl-2">
+                      Click photo to view full size
+                    </p>
+                  </div>
+
+                  {/* Right: Narrative */}
+                  <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        {changemakerStories[1].tagline}
+                      </span>
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                      {changemakerStories[1].title.before}
+                      <span className="text-accent-300">{changemakerStories[1].title.highlight1}</span>
+                      {changemakerStories[1].title.middle}
+                      <span className="text-emerald-300">{changemakerStories[1].title.highlight2}</span>
+                    </h2>
+
+                    <blockquote className="border-l-2 border-accent-400/80 bg-white/[0.03] rounded-r-2xl py-2.5 px-4 text-sm sm:text-base italic text-emerald-100/90 leading-relaxed backdrop-blur-sm">
+                      {changemakerStories[1].quote}
+                    </blockquote>
+
+                    <div className="space-y-2 text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+                      {changemakerStories[1].paragraphs.map((p, i) => (
+                        <p key={i}>{p}</p>
+                      ))}
+                    </div>
+
+                    {/* Chips */}
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      {changemakerStories[1].chips.map((chip) => (
+                        <div
+                          key={chip.text}
+                          className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90"
+                        >
+                          <span>{chip.icon}</span> <span>{chip.text}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action buttons */}
+                    <div className="flex flex-wrap items-center gap-3 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => setReadingStory(changemakerStories[1])}
+                        className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                      >
+                        <span>📖 Read Full Story</span>
+                      </button>
+                      <a
+                        href={changemakerStories[1].ctaLink}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-400 to-amber-500 px-5 py-2.5 text-xs font-bold text-zinc-950 shadow-md shadow-accent-400/20 transition-all hover:scale-105 active:scale-95"
+                      >
+                        <span>{changemakerStories[1].ctaText}</span>
+                        <span>→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ════════ SLIDE 3: MISBAH (EDUCATION ADVOCATE) ════════ */}
+              <div className="w-full shrink-0 min-w-full px-1">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+                  {/* Left: Duo Image Showcase */}
+                  <div className="lg:col-span-5">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-md mx-auto lg:max-w-none">
+                      {/* Image 1: Meetup with Malala */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/misbah meetup.jpeg",
+                            caption: "Action for Education Fellowship • Misbah and Youth Champions in dialogue with Malala Yousafzai",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-accent-400/60"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/misbah meetup.jpeg"
+                          alt="Misbah and Youth Champions in dialogue with Malala"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-accent-300 backdrop-blur-md">
+                          Fellowship
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">Action for Education</p>
+                          <p className="mt-0.5 text-[10px] text-accent-200">With Malala Yousafzai</p>
+                        </div>
+                      </div>
+
+                      {/* Image 2: Misbah Portrait / Celebration */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/misbah.jpeg",
+                            caption: "Misbah • Action for Education Fellow & Youth Education Advocate, Balochistan",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-emerald-400/60 sm:translate-y-4"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/misbah.jpeg"
+                          alt="Misbah, Action for Education Fellow"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 backdrop-blur-md">
+                          Youth Fellow
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">Misbah</p>
+                          <p className="mt-0.5 text-[10px] text-emerald-200">Education Advocate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="mt-4 text-center text-[11px] text-white/50 sm:text-left sm:pl-2">
+                      Click any photo to view full size
+                    </p>
+                  </div>
+
+                  {/* Right: Narrative */}
+                  <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent-400 animate-pulse" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-accent-300">
+                        {changemakerStories[2].tagline}
+                      </span>
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                      {changemakerStories[2].title.before}
+                      <span className="text-accent-300">{changemakerStories[2].title.highlight1}</span>
+                      {changemakerStories[2].title.middle}
+                      <span className="text-emerald-300">{changemakerStories[2].title.highlight2}</span>
+                    </h2>
+
+                    <blockquote className="border-l-2 border-accent-400/80 bg-white/[0.03] rounded-r-2xl py-2.5 px-4 text-sm sm:text-base italic text-emerald-100/90 leading-relaxed backdrop-blur-sm">
+                      {changemakerStories[2].quote}
+                    </blockquote>
+
+                    <div className="space-y-2 text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+                      {changemakerStories[2].paragraphs.map((p, i) => (
+                        <p key={i}>{p}</p>
+                      ))}
+                    </div>
+
+                    {/* Chips */}
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      {changemakerStories[2].chips.map((chip) => (
+                        <div
+                          key={chip.text}
+                          className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90"
+                        >
+                          <span>{chip.icon}</span> <span>{chip.text}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action buttons */}
+                    <div className="flex flex-wrap items-center gap-3 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => setReadingStory(changemakerStories[2])}
+                        className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                      >
+                        <span>📖 Read Full Story</span>
+                      </button>
+                      <a
+                        href={changemakerStories[2].ctaLink}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-400 to-amber-500 px-5 py-2.5 text-xs font-bold text-zinc-950 shadow-md shadow-accent-400/20 transition-all hover:scale-105 active:scale-95"
+                      >
+                        <span>{changemakerStories[2].ctaText}</span>
+                        <span>→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Bottom Indicator Dots ── */}
+          <div className="mt-8 flex items-center justify-center gap-2">
+            {changemakerStories.map((story, idx) => (
+              <button
+                key={story.id}
+                type="button"
+                onClick={() => setActiveStoryIndex(idx)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeStoryIndex === idx
+                    ? "w-8 bg-gradient-to-r from-accent-400 to-amber-500 shadow-sm shadow-accent-400/50"
+                    : "w-2 bg-white/25 hover:bg-white/50"
+                }`}
+                aria-label={`Go to slide ${idx + 1}: ${story.name}`}
+              />
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── Lightbox Modal ── */}
-      {lightboxImg && (
+      {lightbox && (
         <div
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
-          onClick={() => setLightboxImg(null)}
+          onClick={() => setLightbox(null)}
         >
           <div
             className="relative max-h-[90vh] max-w-2xl w-full flex flex-col items-center"
@@ -541,35 +1031,35 @@ export default function ImpactPage() {
           >
             <button
               type="button"
-              onClick={() => setLightboxImg(null)}
+              onClick={() => setLightbox(null)}
               className="absolute -top-12 right-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-all hover:bg-white/40 hover:scale-110"
               title="Close (Esc)"
             >
               ✕
             </button>
-            <div className="relative aspect-[3/4] w-full max-h-[78vh] overflow-hidden rounded-2xl shadow-2xl border-2 border-white/20">
+            <div className="relative aspect-[3/4] sm:aspect-[4/3] w-full max-h-[78vh] overflow-hidden rounded-2xl shadow-2xl border-2 border-white/20">
               <Image
-                src={lightboxImg}
-                alt="Enlarged photo"
+                src={lightbox.src}
+                alt={lightbox.caption}
                 fill
                 className="object-contain"
                 sizes="(max-width: 768px) 100vw, 800px"
               />
             </div>
             <p className="mt-3 text-center text-xs text-white/70">
-              Aleena Baloch • Author & MRC Changemaker (Press ESC or click outside to close)
+              {lightbox.caption} (Press ESC or click outside to close)
             </p>
           </div>
         </div>
       )}
 
-      {/* ── Read Full Essay Modal ── */}
-      {essayModalOpen && (
+      {/* ── Read Full Essay / Story Modal ── */}
+      {readingStory && (
         <div
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 backdrop-blur-md"
-          onClick={() => setEssayModalOpen(false)}
+          onClick={() => setReadingStory(null)}
         >
           <div
             className="relative max-h-[88vh] max-w-3xl w-full flex flex-col rounded-3xl border border-white/20 bg-zinc-900 p-6 sm:p-8 text-white shadow-2xl overflow-hidden"
@@ -578,18 +1068,18 @@ export default function ImpactPage() {
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-accent-300">
-                  Full Impact Essay • Khuzdar, Balochistan
+                  {readingStory.fullEssay.badge}
                 </span>
                 <h3 className="mt-1 text-lg sm:text-xl font-bold text-white">
-                  From Asking “Why Not Me?” to Asking “Why Not Us?”
+                  {readingStory.fullEssay.title}
                 </h3>
                 <p className="text-xs text-white/60">
-                  By Aleena Baloch • Published alongside &ldquo;She Built Her Own Legacy&rdquo;
+                  {readingStory.fullEssay.subtitle}
                 </p>
               </div>
               <button
                 type="button"
-                onClick={() => setEssayModalOpen(false)}
+                onClick={() => setReadingStory(null)}
                 className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-all hover:scale-105"
                 title="Close (Esc)"
               >
@@ -598,11 +1088,11 @@ export default function ImpactPage() {
             </div>
 
             <div className="mt-4 overflow-y-auto pr-2 space-y-3.5 text-sm sm:text-base leading-relaxed text-zinc-200 max-h-[60vh]">
-              {fullEssayParagraphs.map((para, i) => (
+              {readingStory.fullEssay.paragraphs.map((para, i) => (
                 <p key={i} className="text-justify text-zinc-200">
                   {i === 0 ? (
                     <span className="float-left mr-2.5 text-3xl font-serif font-black text-accent-400 leading-none">
-                      A
+                      {para.charAt(0)}
                     </span>
                   ) : null}
                   {i === 0 ? para.slice(1) : para}
@@ -611,10 +1101,10 @@ export default function ImpactPage() {
             </div>
 
             <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-              <span className="text-xs text-white/50">16-Year-Old Author & STEM Advocate</span>
+              <span className="text-xs text-white/50">{readingStory.fullEssay.footerRole}</span>
               <button
                 type="button"
-                onClick={() => setEssayModalOpen(false)}
+                onClick={() => setReadingStory(null)}
                 className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold text-white hover:bg-white/20"
               >
                 Close

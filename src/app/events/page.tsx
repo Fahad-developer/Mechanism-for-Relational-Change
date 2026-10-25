@@ -1,6 +1,7 @@
 import { connectDB } from "@/lib/db";
 import { EventModel } from "@/lib/Event";
 import Image from "next/image";
+import ReimagineSummit from "@/components/ReimagineSummit";
 
 export const dynamic = "force-dynamic";
 
@@ -9,21 +10,33 @@ export default async function EventsPage() {
   const events = await EventModel.find({ isUpcoming: true }).sort({ date: 1 });
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-28 pb-24 px-6 lg:px-8">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-28 pb-24 px-4 sm:px-6 lg:px-8">
       <div className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full bg-primary-200/25 blur-3xl animate-float" />
       <div className="pointer-events-none absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-accent-200/15 blur-3xl animate-float-reverse" />
 
-      <div className="relative mx-auto max-w-4xl">
-        <div className="text-center animate-fade-in-up">
-          <span className="inline-block rounded-full bg-gradient-to-r from-accent-200 to-accent-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-700 shadow-sm">
-            Events
+      <div className="relative mx-auto max-w-6xl">
+        {/* Flagship Summit Spotlight */}
+        <ReimagineSummit />
+
+        {/* Section Divider */}
+        <div className="relative my-16 flex items-center justify-center">
+          <div className="w-full border-t border-zinc-200/80" />
+          <span className="absolute bg-white px-4 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+            More Gatherings & Programs
           </span>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl lg:text-5xl">
+        </div>
+
+        {/* Upcoming Events Heading */}
+        <div className="text-center animate-fade-in-up max-w-2xl mx-auto">
+          <span className="inline-block rounded-full bg-gradient-to-r from-accent-200 to-accent-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-700 shadow-sm">
+            Calendar
+          </span>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl">
             Upcoming{" "}
             <span className="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
               Events
             </span>
-          </h1>
+          </h2>
           <p className="mt-3 text-base leading-relaxed text-zinc-500">
             Join us at our upcoming programs, workshops, and community gatherings across Balochistan.
           </p>
