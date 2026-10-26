@@ -265,9 +265,9 @@ const changemakerStories = [
   },
   {
     id: "awisha",
-    tabLabel: "Awisha (Founder of YEAC)",
-    name: "Awisha",
-    authorLabel: "Awisha • Founder of YEAC & Youth Advocate",
+    tabLabel: "Awesha Ali (Founder of YEAC)",
+    name: "Awesha Ali",
+    authorLabel: "Awesha Ali • Founder of YEAC & Youth Advocate",
     tagline: "Youth Empowerment • Action For Change",
     location: "Balochistan",
     title: {
@@ -294,7 +294,7 @@ const changemakerStories = [
     fullEssay: {
       badge: "Advocacy Journey • Balochistan",
       title: "From “What Can I Do?” to “Let’s Do This”",
-      subtitle: "By Awisha • Founder of YEAC and Youth Advocate",
+      subtitle: "By Awesha Ali • Founder of YEAC and Youth Advocate",
       footerRole: "Founder of YEAC & Youth Advocate",
       paragraphs: [
         "I once dreamed about my own future. Today, I dream about what becomes possible when every girl has the opportunity to choose hers.",
@@ -304,7 +304,7 @@ const changemakerStories = [
         "The confidence MRC gave me helped me represent girls before district authorities and community leaders. Our advocacy enabled YEAC to receive permission to work in schools, secured commitments from ten schools to support girls’ education and STEM, and inspired a tribal elder to publicly support girls’ education.",
         "MRC taught me that when young people are trusted and supported, their ideas can transform communities.",
         "I no longer ask, “What can I do?” Now I say, “Let’s do this—”",
-        "Awisha — Founder of YEAC and Youth Advocate",
+        "Awesha Ali — Founder of YEAC and Youth Advocate",
       ],
     },
   },
@@ -355,6 +355,59 @@ const changemakerStories = [
         "The greatest gift MRC gave me was not a title or an achievement. It was a new way of seeing myself. I now believe that my ideas have value, my voice can contribute, and I do not have to wait for someone else to begin creating change.",
         "My fellowship left me with one powerful question: What could happen if we all did our part?",
         "Your age does not determine your potential. You can question. You can learn. You can lead. You can begin. Sometimes, change begins when one young person discovers that her voice is worth hearing—and finds the courage and opportunity to use it.",
+      ],
+    },
+  },
+  {
+    id: "faiza",
+    tabLabel: "Faiza Meer (Roshan Kal)",
+    name: "Faiza Meer",
+    authorLabel: "Faiza Meer • Founder of Roshan Kal & HER POWER Fellow",
+    tagline: "HER POWER • Founder of Roshan Kal",
+    location: "Khuzdar, Balochistan",
+    title: {
+      before: "The Questions That ",
+      highlight1: "Changed the Way",
+      middle: " I ",
+      highlight2: "Lead",
+    },
+    quote:
+      "“I used to see a problem and think, ‘Someone should do something.’ Now I ask, ‘What can I do, and who can I bring with me?’”",
+    paragraphs: [
+      "Growing up in Khuzdar, Faiza was deeply committed to community volunteering, but was still discovering what meaningful transformation really meant. Through MRC’s HER POWER project and the Explorer experience, visiting women-led businesses opened her eyes to what was possible showing her that young women from Balochistan can build initiatives of their own and create spaces for others.",
+      "That vision led her to found Roshan Kal, establishing safe and supportive spaces where children and young people can speak, participate, learn, and believe in their own potential. Today, she leads with listening, collaboration, and grassroots action.",
+    ],
+    chips: [
+      { icon: "☀️", text: "Founder of Roshan Kal" },
+      { icon: "⚡", text: "HER POWER Fellow" },
+      { icon: "🏘️", text: "Youth Spaces in Khuzdar" },
+      { icon: "👂", text: "Listening & Active Leadership" },
+    ],
+    ctaText: "Support Youth Leadership",
+    ctaLink: "/donate",
+    fullEssay: {
+      badge: "HER POWER Journey • Khuzdar, Balochistan",
+      title: "The Questions That Changed the Way I Lead",
+      subtitle: "By Faiza Meer • Founder of Roshan Kal & HER POWER Fellow",
+      footerRole: "Founder of Roshan Kal & HER POWER Fellow",
+      paragraphs: [
+        "I used to see a problem and think, ‘Someone should do something.’ Now I ask, ‘What can I do, and who can I bring with me?’",
+        "Growing up in Khuzdar, I was surrounded by young people with ideas, dreams, and so much potential. But I also saw how limited opportunities, lack of exposure, and social challenges could make those dreams feel far away.",
+        "I cared about my community and wanted to be part of the solution. Before MRC, I was already involved in volunteering, youth engagement, and community activities. But I was still learning what meaningful change really looked like.",
+        "At that time, I thought helping meant doing something for people. I had not yet learned the importance of listening first.",
+        "Those questions eventually led me to MRC.",
+        "Through the HER POWER project, I started looking at my community differently. Instead of only seeing problems, I began asking: Why does this problem exist? Whose voice is missing? What can I do about it? And how can young people become part of the solution?",
+        "I began to understand that a challenge does not have to be too big simply because I am young.",
+        "During the HER POWER Explorer experience, I visited women-led businesses and learned from women who had built something of their own. That experience changed the way I saw possibility. I realized women from communities like mine could create opportunities not only for themselves, but for others too. I started thinking differently about what I could build.",
+        "MRC helped me develop the confidence to express my ideas, communicate, think through solutions, and take initiative. But the biggest thing I gained was confidence in my own voice. I began to believe that being young did not make my ideas less valuable. I just needed to start where I was, with what I had.",
+        "And that is what I carried with me after MRC. I wanted to create a space where young people could feel supported, participate, express themselves, and discover what they were capable of. That idea became Roshan Kal.",
+        "Through Roshan Kal, I began creating safe and supportive spaces for children and young people—spaces where they can speak, participate, learn, and believe in their own potential. For me, this was more than starting something new. It was taking what I had learned and turning it into something I could give back.",
+        "My understanding of leadership changed too. I used to think leadership was connected to positions or titles. Now, I see it as listening, responsibility, collaboration, and taking initiative.",
+        "My journey has also changed the way I look at problems. Before, I would see a problem and think, ‘Someone should do something.’ Now, I ask, ‘Why is this happening? Whose voice is missing? What can realistically be done? And how can young people be part of the answer?’",
+        "I am still a student, still learning and discovering the kind of change I want to create. I want to continue working around education, youth empowerment, and community development, especially creating opportunities for young people who may not always have access to them. MRC gave me that space. Now, I want to help create that space for someone else.",
+        "I started with questions. MRC gave me the space to explore them. Those questions became ideas. Those ideas became action. And now, I want that action to create space for others.",
+        "I can start where I am. I can start with what I have. And I can bring others with me.",
+        "Faiza Meer — Founder of Roshan Kal & HER POWER Fellow",
       ],
     },
   },
@@ -588,11 +641,10 @@ export default function ImpactPage() {
                     key={story.id}
                     type="button"
                     onClick={() => setActiveStoryIndex(idx)}
-                    className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition-all duration-300 ${
-                      activeStoryIndex === idx
+                    className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition-all duration-300 ${activeStoryIndex === idx
                         ? "bg-gradient-to-r from-accent-400 to-amber-500 text-zinc-950 shadow-md shadow-accent-400/20 scale-[1.02]"
                         : "text-white/70 hover:text-white hover:bg-white/10"
-                    }`}
+                      }`}
                   >
                     {story.tabLabel}
                   </button>
@@ -760,7 +812,7 @@ export default function ImpactPage() {
                 </div>
               </div>
 
-              {/* ════════ SLIDE 2: AWISHA (YEAC) ════════ */}
+              {/* ════════ SLIDE 2: AWESHA ALI (YEAC) ════════ */}
               <div className="w-full shrink-0 min-w-full px-1">
                 <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
                   {/* Left: Speaker Showcase Image & Cards */}
@@ -771,7 +823,7 @@ export default function ImpactPage() {
                         onClick={() =>
                           setLightbox({
                             src: "/story/awisha.jpeg",
-                            caption: "Awisha • Founder of YEAC and Youth Advocate representing youth in Balochistan",
+                            caption: "Awesha Ali • Founder of YEAC and Youth Advocate representing youth in Balochistan",
                           })
                         }
                         className="group relative aspect-[4/3] sm:aspect-[16/11] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-accent-400/60"
@@ -779,7 +831,7 @@ export default function ImpactPage() {
                       >
                         <Image
                           src="/story/awisha.jpeg"
-                          alt="Awisha speaking at a podium as Founder of YEAC"
+                          alt="Awesha Ali speaking at a podium as Founder of YEAC"
                           fill
                           className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                           sizes="(max-width: 768px) 100vw, 500px"
@@ -789,7 +841,7 @@ export default function ImpactPage() {
                           Youth Leader & Speaker
                         </span>
                         <div className="absolute bottom-3 inset-x-3 sm:bottom-4 sm:inset-x-4">
-                          <p className="text-sm sm:text-base font-bold text-white leading-tight">Awisha</p>
+                          <p className="text-sm sm:text-base font-bold text-white leading-tight">Awesha Ali</p>
                           <p className="mt-0.5 text-xs text-accent-200 font-medium">Founder of YEAC & Youth Advocate • Balochistan</p>
                         </div>
                       </div>
@@ -995,6 +1047,132 @@ export default function ImpactPage() {
                   </div>
                 </div>
               </div>
+
+              {/* ════════ SLIDE 4: FAIZA MEER (ROSHAN KAL) ════════ */}
+              <div className="w-full shrink-0 min-w-full px-1">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+                  {/* Left: Duo Image Showcase */}
+                  <div className="lg:col-span-5">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-md mx-auto lg:max-w-none">
+                      {/* Image 1: Speaking Outdoors */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/faiza-meer.jpeg",
+                            caption: "Faiza Meer • Founder of Roshan Kal & HER POWER Fellow speaking at a youth engagement session in Balochistan",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-accent-400/60"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/faiza-meer.jpeg"
+                          alt="Faiza Meer speaking at youth engagement session"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-accent-300 backdrop-blur-md">
+                          Youth Voice
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">Faiza Meer</p>
+                          <p className="mt-0.5 text-[10px] text-accent-200">Founder, Roshan Kal</p>
+                        </div>
+                      </div>
+
+                      {/* Image 2: Portrait with Lanyard */}
+                      <div
+                        onClick={() =>
+                          setLightbox({
+                            src: "/story/faiza-meer-2.jpeg",
+                            caption: "Faiza Meer • HER POWER Fellow & Community Leader, Khuzdar, Balochistan",
+                          })
+                        }
+                        className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl border border-white/20 bg-white/5 shadow-2xl transition-all duration-300 hover:scale-[1.03] hover:border-emerald-400/60 sm:translate-y-4"
+                        title="Click to view full size"
+                      >
+                        <Image
+                          src="/story/faiza-meer-2.jpeg"
+                          alt="Faiza Meer portrait, HER POWER Fellow"
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 50vw, 260px"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
+                        <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 backdrop-blur-md">
+                          HER POWER
+                        </span>
+                        <div className="absolute bottom-3 inset-x-3">
+                          <p className="text-xs sm:text-sm font-bold text-white leading-tight">HER POWER</p>
+                          <p className="mt-0.5 text-[10px] text-emerald-200">Khuzdar Changemaker</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="mt-4 text-center text-[11px] text-white/50 sm:text-left sm:pl-2">
+                      Click any photo to view full size
+                    </p>
+                  </div>
+
+                  {/* Right: Narrative */}
+                  <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent-400 animate-pulse" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-accent-300">
+                        {changemakerStories[3].tagline}
+                      </span>
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                      {changemakerStories[3].title.before}
+                      <span className="text-accent-300">{changemakerStories[3].title.highlight1}</span>
+                      {changemakerStories[3].title.middle}
+                      <span className="text-emerald-300">{changemakerStories[3].title.highlight2}</span>
+                    </h2>
+
+                    <blockquote className="border-l-2 border-accent-400/80 bg-white/[0.03] rounded-r-2xl py-2.5 px-4 text-sm sm:text-base italic text-emerald-100/90 leading-relaxed backdrop-blur-sm">
+                      {changemakerStories[3].quote}
+                    </blockquote>
+
+                    <div className="space-y-2 text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+                      {changemakerStories[3].paragraphs.map((p, i) => (
+                        <p key={i}>{p}</p>
+                      ))}
+                    </div>
+
+                    {/* Chips */}
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      {changemakerStories[3].chips.map((chip) => (
+                        <div
+                          key={chip.text}
+                          className="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 px-3 py-2 text-[11px] font-medium text-white/90"
+                        >
+                          <span>{chip.icon}</span> <span>{chip.text}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action buttons */}
+                    <div className="flex flex-wrap items-center gap-3 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => setReadingStory(changemakerStories[3])}
+                        className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+                      >
+                        <span>📖 Read Full Story</span>
+                      </button>
+                      <a
+                        href={changemakerStories[3].ctaLink}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-400 to-amber-500 px-5 py-2.5 text-xs font-bold text-zinc-950 shadow-md shadow-accent-400/20 transition-all hover:scale-105 active:scale-95"
+                      >
+                        <span>{changemakerStories[3].ctaText}</span>
+                        <span>→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1005,11 +1183,10 @@ export default function ImpactPage() {
                 key={story.id}
                 type="button"
                 onClick={() => setActiveStoryIndex(idx)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  activeStoryIndex === idx
+                className={`h-2 rounded-full transition-all duration-300 ${activeStoryIndex === idx
                     ? "w-8 bg-gradient-to-r from-accent-400 to-amber-500 shadow-sm shadow-accent-400/50"
                     : "w-2 bg-white/25 hover:bg-white/50"
-                }`}
+                  }`}
                 aria-label={`Go to slide ${idx + 1}: ${story.name}`}
               />
             ))}

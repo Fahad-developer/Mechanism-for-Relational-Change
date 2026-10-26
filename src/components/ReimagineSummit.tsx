@@ -24,6 +24,15 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
   },
   {
     id: "photo-2",
+    src: "/events/IMG_3950.JPG",
+    title: "Ministerial Address & Policy Reflection",
+    subtitle: "Hon. Rahila Durrani & Sana Baloch in Dialogue",
+    tag: "Ministerial Dialogue",
+    description:
+      "Chief Guest & Education Minister Rahila Durrani speaking at the microphone alongside parliamentarian Sana Baloch and senior officials, directly addressing educational reforms, school dropouts, and girls' learning.",
+  },
+  {
+    id: "photo-3",
     src: "/events/IMG_3167.JPG",
     title: "High-Level Stakeholders & Dignitaries Panel",
     subtitle: "Provincial Policy Dialogue",
@@ -32,7 +41,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "Education Minister Rahila Durrani (Chief Guest), parliamentarian Sana Baloch, and distinguished education experts engaged in dialogue on systemic educational reforms in Balochistan.",
   },
   {
-    id: "photo-3",
+    id: "photo-4",
     src: "/events/IMG_3522.JPG",
     title: "Youth Advocacy in the Spotlight",
     subtitle: "Young Champions Raising Voices for Girls' Education",
@@ -41,7 +50,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "Young female Education Champions presenting their advocacy research at the podium microphone, challenging decision-makers on school dropout, learning environments, and girls' educational rights.",
   },
   {
-    id: "photo-4",
+    id: "photo-5",
     src: "/events/IMG_3365.JPG",
     title: "Unity for Education: Official Stage Commendation",
     subtitle: "Leadership, Organizers & Champions",
@@ -50,7 +59,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "Education Minister Rahila Durrani, Sana Baloch, MRC leadership, and Education Champions gathered on stage holding commendation shields and certificates celebrating the summit's collective outcomes.",
   },
   {
-    id: "photo-5",
+    id: "photo-6",
     src: "/events/IMG_3392.JPG",
     title: "Grand Auditorium Gathering in Quetta",
     subtitle: "Hundreds of Stakeholders United",
@@ -59,7 +68,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "A panoramic view of the crowded summit hall in Quetta on February 9, 2026, bringing together parliamentarians, educators, civil society, students, and community elders.",
   },
   {
-    id: "photo-6",
+    id: "photo-7",
     src: "/events/IMG_3216.JPG",
     title: "Civil Society & Media Engagement",
     subtitle: "Active Audience & Media Coverage",
@@ -68,7 +77,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "Summit participants, youth fellows, and journalists attentively listening to the ministerial address and fellows' presentations during the Quetta proceedings.",
   },
   {
-    id: "photo-7",
+    id: "photo-8",
     src: "/events/IMG_3310.JPG",
     title: "Policy Insights & Structural Action",
     subtitle: "Translating Dialogue into Real Reform",
@@ -77,7 +86,7 @@ const SUMMIT_PHOTOS: SummitPhoto[] = [
       "Keynote panelists discussing actionable pathways for public school infrastructure, teacher capacity, climate-resilient schools, and inclusive curriculum development.",
   },
   {
-    id: "photo-8",
+    id: "photo-9",
     src: "/events/IMG_3360.JPG",
     title: "Honoring Champions of Change",
     subtitle: "Celebrating Action for Education Fellows",
@@ -297,7 +306,7 @@ export default function ReimagineSummit() {
                 </svg>
               </button>
 
-              <span className="text-xs text-zinc-400 font-medium">8 Official Photos</span>
+              <span className="text-xs text-zinc-400 font-medium">{SUMMIT_PHOTOS.length} Official Photos</span>
             </div>
           </div>
 
@@ -408,7 +417,7 @@ export default function ReimagineSummit() {
           </div>
 
           {/* Thumbnail Carousel Strip */}
-          <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
+          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2">
             {SUMMIT_PHOTOS.map((photo, idx) => {
               const isActive = idx === activePhotoIdx;
               return (
